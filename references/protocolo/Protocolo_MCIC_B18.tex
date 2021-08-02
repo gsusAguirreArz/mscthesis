@@ -1,0 +1,269 @@
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%Ver. 04/10/18
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[runningheads,a4paper]{book}
+\usepackage[utf8]{inputenc}
+%\usepackage{default}
+%\usepackage[spanish]{babel} % Para separar correctamente las palabras
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+
+\usepackage{url}
+\urldef{\mailsa}\path|COREEOALUMNO@gmail.com|
+\urldef{\mailsb}\path|{CORREDIRECTOR 1, CORREODIRECTOR 2 si lo hay}@cic.ipn.mx|    
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Título de Tesis a registrar}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{ }
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{Nombre del alumno,\\
+Nombre del director(1),\\
+Nombre del director(2)}
+%
+\authorrunning{ }
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{Centro de Investigaci\'on en Computaci\'on,\\
+Av. Juan de Dios Batiz esq. Miguel Othon de Mendizabal s/n\\
+Col. Nueva Industrial Vallejo, Mexico, D. F.\\
+\mailsa\\
+\mailsb\\
+\url{http://www.cic.ipn.mx}}
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+%\toctitle{ }
+%\tocauthor{ }
+\maketitle
+
+
+\begin{abstract}
+The abstract should summarize the contents of the paper and should
+contain at least 70 and at most 200 words. It should be written using the
+\emph{abstract} environment.
+\keywords{\'areas relacionadas}
+\end{abstract}
+
+
+\section{Introducción}
+\subsection{Antecedentes}
+
+En esta sección se describen los trabajos identificados en el estado del arte (artículos obtenidos de las principales bases de datos, IEEE, ACM, Scopus, Springer, indexados en el JCRs, SCI e IRMICyT; entre otras). Se sugiere presentar un análisis del estado del arte. 
+
+Las propuestas de tesis que los alumnos presentan, son formuladas originalmente por sus directores de tesis.
+
+Es importante que definan bien si su contribución será un sistema, un método, una metodología, un algoritmo, un conjunto de subsistemas, etc. 
+
+En esta sección algunos conceptos del marco teórico pueden aparecer con el objetivo de aclarar la terminología de la línea de investigación a resolver. 
+
+La redacción debe de ir poco a poco encaminando al lector, explicando cuál será el impacto que su tema de tesis tendrá en las Líneas Específica de Investigación del Laboratorio en el cual estará adscrito.  Esto es, debe de ir poco a poco encaminando al lector, indicándole cuál es o son la(s) problemática(s) actuales en la Línea Específica de Investigación del Laboratorio, y cuál de todas ellas se piensa resolver, planteándolo como problema a resolver.
+
+Consultar: http://www.cic.ipn.mx/sitioCIC/index.php/lineas-especificas-de-investigacion
+
+\subsection{Descripción de cómo se afronta esta problemática en la actualidad}
+
+Una vez definidos el o los problema(s) que las soluciones actuales tienen, se debe de cuestionar si éstas son válidas o hasta que punto, después de analizar lo anterior, es posible críticar (analizar, comprender y razonar) las soluciones ya existentes, con el objetivo de encontrarles puntos científicamente débiles que permitan que surja la necesidad de plantear nuevas formas de realizar investigación. 
+
+Se sugiere responder a la preguntas ¿Qué inconvenientes existen con la forma de afrontar cada una de las soluciones al problema? y ¿Cómo se resuelve actualmente?.
+
+\subsection{Problemática a abordar en la tesis}
+
+Hacer un planteamiento del problema conciso, destacando, de todos los problemas antes estudiados y analizados, cuál es el problema a atacar y de que forma se considera que se puede resolver. El problema científico parte de lo que hasta este momento no se ha podido resolver (por parte de otras personas y que emana del estudio del estado del arte). No todo se ha resuelto, existen situaciones que ameritan ser desarrolladas haciendo uso del método científico. Tales situaciones se tienen que ver plasmadas en este punto de la propuesta que se está realizando. Tratar de responder la pregunta ¿Alguien ha hecho lo que se está proponiendo en alguna parte del mundo?, ¿Soy solo yo?, ¿Cómo lo hacen los demás?, ¿Qué diferencias existirán en mi trabajo con respecto a lo que ya se hizo?
+
+\section{Características y generalidades}
+\subsection{Descripción de la solución al problema planteado}
+
+Describir de forma preliminar como se intentará resolver el problema en el trabajo de tesis. Generar hipótesis de cómo resolver un problema es una propiedad humana. Apoyarlas con elementos sólidos de conocimiento e hilvanarlas con aspectos teóricos contundentes, es tarea del científico. Además, aquí se debe de poner un esquema que bosqueje la forma en la que se resolverá el problema antes planteado. Dicho esquema tiene mucha relación con la temática del trabajo de tesis, diagramas de control (si es que la tesis enmarca control de algo), arquitecturas de procesadores propuestas (si es que la tesis enmarca nuevas arquitecturas), metodologías diferentes a las actuales (si es que la tesis enmarca metodologías), se tiene que ver claramente qué de nuevo se va a realizar con respecto a lo que ya se ha hecho. Este es el punto más crítico del trabajo pues lo que aquí se mencione, avalará la factibilidad de que el trabajo merece ser un trabajo de maestría, es decir tiene el peso para ello.
+
+\subsection{Contribuciones esperadas}
+
+Cuantificar y describir las contribuciones que se esperan obtener. Las cuáles pueden ser científicas o tecnológicas. Se debe de indicar claramente que se entregará como producto esperado al final de sus estudios, así como los subproductos de la investigación.
+
+\subsection{Justificación del desarrollo del trabajo}
+
+Todo trabajo de investigación debe de tener una justificación de ser. La justificación principalmente versa sobre la viabilidad de su realización, la reducción de costos de algo o bien el alcance del beneficio social esperado.\newline
+
+NOTA: El bosquejo preliminar de un trabajo científico permite reunir, seleccionar, clasificar, ordenar y reordenar la información obtenida de la lectura o de la investigación a medida que se progresa en la redacción del texto definitivo.
+
+\section{Redacción de objetivos e índice tentativo de la tesis}
+\subsection{Objetivo General:}
+
+\subsection{Objetivos Espec\'ificos:}
+\paragraph{Objetivo 1.}
+Hacer algo...
+
+
+\subsection{\'Indice tentativo de la tesis:}
+
+\section{Aspectos importantes a destacar del trabajo de tesis}
+Apoyarse del director de tesis para responder.
+\begin{itemize}
+\settowidth{\leftmargin}{{\Large$\circ$}}\advance\leftmargin\labelsep
+\itemsep8pt\relax
+\renewcommand\labelitemi{{\lower1.5pt\hbox{\Large$\circ$}}}
+ \item Indicar al menos 3 aspectos del porqué la investigación a realizar es relevante para el grupo de trabajo (laboratorio) al cual se integrará. Esto es, será parte de investigaciones actualmente realizándose o es una investigación reciente o es una investigación aislada; entre otras, explicar.
+ \item Si el trabajo a realizar ya se ha hecho con antelación en el Centro en que cambia, científicamente cuál es la diferencia. Reutilizará software o empezará desde cero.
+ \item Existen los elementos de hardware o software actualmente en el Centro, de no ser así, cuánto estiman tardarse y de que forma se considera que se obtendrán (financiamiento por proyecto, personal).
+\end{itemize}
+Tipo de formación considerada al final del trabajo para el alumno (científica o tecnológica).
+
+
+\section{Plan de trabajo y cronograma}
+\subsection{ }
+Enumere y describa de forma breve las acciones y actividades que desarrollará para lograr los objetivos propuestos, así como los productos que se generarán como fruto del desarrollo de las actividades. 
+\begin{table}
+\begin{center}
+ \begin{tabular}{|c|c|c|}
+\hline\noalign{\smallskip}
+Consecutivo & Actividades o acciones a desarrollar & Productos Esperados\\
+\noalign{\smallskip}
+\hline
+\noalign{\smallskip}
+ &  &  \\\hline
+ &  &  \\\hline
+ &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\subsection{ }
+Debe señalar los meses estimados de inicio y término de cada una de las actividades descritas en el Plan de Trabajo, a partir de la fecha de presentación de esta solicitud.
+\begin{table}
+\begin{center}
+ \begin{tabular}{|c|c|c|}
+\hline\noalign{\smallskip}
+ & PRIMER A\~NO & SEGUNDO A\~NO\\
+\noalign{\smallskip}
+\hline\noalign{\smallskip}
+Actividad & \begin{tabular}{c|c|c|c|c|c}
+            ene & feb & mar & abr & may & jun\\
+            \end{tabular}
+				    & \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
+				    jul & ago & sep & oct & nov & dic & ene & feb & mar & abr & may & jun\\
+				    \end{tabular}\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\section{Recursos a nivel de hardware y software a utilizar}
+
+
+\section{Descripci\'on de donde se realizar\'a la estancia}
+
+Indicar tiempo, lugar, grupo de trabajo con el que se colaborará y demás aspectos afines, en caso de tener planeada una acción de movilidad académica.
+
+\section{Plan de asignaturas a tomar}
+\begin{table}
+\begin{center}
+ \begin{tabular}{|l|l|}
+\hline\noalign{\smallskip}
+Primer Semestre & Segundo Semestre\\
+1. & 1.\\
+2. & 2.\\
+3. & 3.\\
+4. & 4. Seminario II\\
+5. Seminario & 5. Tema de tesis\\
+\hline\noalign{\smallskip}
+Tercer Semestre & Cuarto Semestre\\
+1. & 1. Tema de tesis\\
+2. & \\
+3. & \\
+4. Seminario III& \\
+5. Tema de tesis & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Comit\'e tutorial propuesto}
+
+\textbf{NOTA:} Indicar en qué partes de la solución propuesta cada uno de los miembros del cuerpo académico es especialista y de que manera se considera que su inclusión en el comité apoyará en el desarrollo de las actividades a desarrollarse en la presente propuesta. Apoyarse del director de tesis para responder.
+
+\section{Conclusiones}
+
+NOTA: Del total de referencias bibliográficas colocadas en este punto se les solicita que sea una menor cantidad de enlaces a páginas WEB de Internet y de artículos de congresos, con el objetivo de que prepondere la cantidad de referencias provenientes de revistas indexadas en el JCR, SCI, IRMICyT. El alumno deberá de indicar cuántas referencias están indexadas en el JCR. Apoyarse del director de tesis para responder, en caso de no poder identificarlas.
+
+\section{NOTA ACLARATORIA}
+El presente documento es representativo de que tanto alumno como director(es) de tesis están de acuerdo en trabajar conjuntamente en cumplir los objetivos planteados en el mismo. Quedando claro que el contenido de éste es pieza sustentante de las labores a desarrollar por ambas partes y que al momento de ser entregado a la Coordinación del programa, queda de conformidad su desarrollo por los involucrados. Considerando además que la planeación presentada emana de una propuesta por parte del o los director(es) de tesis y es un trabajo a desarrollar por el asesorado cuya labor se considera como un recurso humano de apoyo a un investigador.
+
+En caso de que una de las partes, alumno o director(es) de tesis decidan modificar el proceso de desarrollo que se describe en este documento (en un porcentaje menor al 50 por ciento), dicha modificación deberá de ser notificada a la Coordinación en un plazo no mayor de 30 días a partir de la fecha de decisión de dicha modificación. Dicho porcentaje estará estipulado por el Director de Tesis. Si la modificación supera el 50 por ciento, el alumno deberá de volver a repetir el procedimiento administrativo de entrega de FUTE y de protocolo. Un ejemplo de superación del 50 por ciento es el cambio total del tema de tesis o de los objetivos planteados en este documento con relación a una nueva propuesta.
+
+Si existe una agregación de director de tesis y la misma no implica un cambio del 50 por ciento del contenido de este documento de planeación inicial, no se requerirá la repetición del protocolo que se menciona con antelación, excepto la entrega del nuevo FUTE.
+
+En caso de que una de las partes, alumno o director(es) de tesis decidan dar por terminada la labor científica que se describe en este documento; el alumno, en su carácter de recurso humano de apoyo de un investigador, tendrá que formular otro protocolo de tesis en donde plasme las nuevas vertientes del nuevo proyecto de investigación a realizar con un nuevo director o directores de tesis, informando a la Coordinación de lo anterior y llevar a cabo el proceso administrativo correspondiente. El cual consiste en la entrega del FUTE correspondiente y la entrega del nuevo protocolo, siempre que se cumpla lo estipulado en los artículos 37 y 38 del REP-IPN. 
+
+En especial, para solicitar el cambio de dirección de tesis, el alumno deberá considerar el tiempo que establece en el Artículo 37 del REP-IPN, para poder realizar lo anterior:
+\newline
+\newline
+\emph{El alumno podrá solicitar al Colegio de Profesores de Posgrado el cambio de director de tesis, así como de los miembros del comité tutorial, cuando se justifque plenamente bajo criterios académicos. El alumno de tiempo completo deberá realizar la solicitud antes del término del segundo periodo escolar para el caso de especialidad o maestría, o ...}
+\newline
+\newline
+El presente protocolo deberá de entregarse a la Coordinación del Programa. Por otra parte, el Formato Único de Trámites Escolares (FUTE) deberá ser entregado, debidamente requisitado, en el Departamento de Tecnologías Educativas, ambos documentos con fecha límite de entrega del \emph{16 de noviembre de 2018.}
+
+
+%\section*{References}
+\bibliographystyle{vancouver}
+\bibliography{marticulo}
+
+\begin{thebibliography}{4}
+
+\bibitem{jour} Smith, T.F., Waterman, M.S.: Identification of Common Molecular
+Subsequences. J. Mol. Biol. 147, 195--197 (1981)
+
+\bibitem{lncschap} May, P., Ehrlich, H.C., Steinke, T.: ZIB Structure Prediction Pipeline:
+Composing a Complex Biological Workflow through Web Services. In: Nagel,
+W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128,
+pp. 1148--1158. Springer, Heidelberg (2006)
+
+\bibitem{book} Foster, I., Kesselman, C.: The Grid: Blueprint for a New Computing
+Infrastructure. Morgan Kaufmann, San Francisco (1999)
+
+\bibitem{proceeding1} Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C.: Grid
+Information Services for Distributed Resource Sharing. In: 10th IEEE
+International Symposium on High Performance Distributed Computing, pp.
+181--184. IEEE Press, New York (2001)
+
+\bibitem{proceeding2} Foster, I., Kesselman, C., Nick, J., Tuecke, S.: The Physiology of the
+Grid: an Open Grid Services Architecture for Distributed Systems
+Integration. Technical report, Global Grid Forum (2002)
+
+\bibitem{url} National Center for Biotechnology Information, \url{http://www.ncbi.nlm.nih.gov}
+
+\end{thebibliography}
+\end{document}
