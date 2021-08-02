@@ -23,9 +23,9 @@
 
 
 \NeedsTeXFormat{LaTeX2e}
-\newcommand{\classname}{IpnThesis}
+\newcommand{\classname}{IpnThesisClass}
 \providecommand{\baseclass}{book}
-\ProvidesClass{\classname}[2020/03/24 v0.1 IpnThesis class]
+\ProvidesClass{\classname}[2020/03/24 v0.1 IpnThesisClass class]
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
