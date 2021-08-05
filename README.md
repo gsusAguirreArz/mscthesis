@@ -57,9 +57,11 @@ Para compilar el archivo se usa:
 - Plan + Cronograma
     -	Enumere y describa las acciones y actividades que desarrollará para lograr los objetivos propuestos así como productos generados
     -	Meses estimados de inicio y término de cada una de las actividades descritas en el plan de trabajo a partir de la fecha de presentación de esta solicitud
-- Donde se realizará la estancia?
-    -	Tiempo, lugar, grupo de trabajo y aspectos afines
-- Plan de asignaturas a tomar
+- estado del arte
+- redes generativas
+- metodos experiemntal
+-resultados
+- conclusiones
 
 ### Referencias
 - 1.1 
