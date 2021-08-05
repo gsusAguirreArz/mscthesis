@@ -60,7 +60,7 @@ Para compilar el archivo se usa:
 - estado del arte
 - redes generativas
 - metodos experiemntal
--resultados
+- resultados
 - conclusiones
 
 ### Referencias
