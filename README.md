@@ -8,8 +8,27 @@ Para compilar el archivo se usa:
 
 - Windows [TexMaker](https://www.xm1math.net/texmaker/)
 
+### Tablero de trabajo
+
+- [ClickUp](https://sharing.clickup.com/b/h/6-86163009-2/2942c6d6b216fb3) 
 
 ## Título: Desenredar parámetros latentes en redes generativas  para simulaciones  de cascada de rayos cósmicos
+
+### Generalidades
+
+- Seleccionar area de interes dentro de tu especialidad profesional
+- Delimitas tu tema de estudio
+- Llegas al planteamiento del problema de investigacion
+- Formulas diversas hipotesis en torno a tu problema seleccionado
+- Establece objetivos en relacion al trabajo
+- Obtener informacion a traves de varias fuentes
+- Revisa y selecciona la informacion consultada para apoyar la investigacion (una y otra vez)
+- Determina la metodologia que usaras para el proyecto
+- Recoleccion y plateamiento de datos
+- Estudio de resultados en relacion con la hipotesis y objetivos postulados
+- Conclusiones y recomendaciones
+- Listado de fuentes consultadas
+
 
 ### Indice
 

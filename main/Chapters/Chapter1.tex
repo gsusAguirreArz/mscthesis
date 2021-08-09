@@ -1,23 +1,64 @@
-% Chapter Template
+\chapter{Introduccion}
 
-\chapter{Introduccion} % Main chapter title
+\label{Chapter1}
 
-\label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
+En este capitulo se muestra la principal motivacion para el desarrollo de esta tesis, 
+asi como una breve perspectiva de la problematica general. Como capitulo introductorio este contiene la introduccion,
+el planteamiento del problema, el objetivo, las fronteras del estudio y la estructura del escrito.
 
 \section{Introduccion}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+En el area de la fisica de altas energias (HEP) las tecnicas de aprendizaje maquina (ML) siempre estuvieron presentes. 
+Debido a la sorprendente efectividad de tecnicas modernas como el aprendizaje profundo, 
+se comenzaron a adaptar y desarrollar estos metodos en todos los rubros del campo. 
+Algunas de las aplicaciones van desde los enfoques que se tienen en la parte experimental, la fenomenologica o en el anlisis teorico de los eventos.\\
 
+En los experimentos mas importantes del campo, el tratamiento y analisis de datos es una tarea fundamental.
+Tecnicas como arboles de desicion, maquinas de soporte vectorial, algoritmos geneticos, entre otras, 
+fallaban cuando la dimensionalidad de los datos aumentaba.
+Como referencia de la alta dimensionalidad, en el gran colisionador de hadrones LHC, las colisiones ocurren con una frecuencia de aproximadamente 40Mhz,
+ademas de que cada colision genera un gran numero de particulas y en particular el LHC tiene alrededor $O(10^8)$ sensores para su deteccion.\\
+
+Debido a que las observaciones son fundamentalmente probabilisticas se tiene un modelo 
+estadistico que describe la probabilidad de observar un evento dado los parametros de una teoria.
+Pero la alta dimensionalidad, junto con los grandes volumenes de datos generan un problema, ya que el 
+modelo de los datos experimentales no se conoce explicitamente.
+Sin embargo, si se tiene acceso a muestras de datos generados por simuladores estocasticos que modelan la fisica de las interacciones.
+Herramientas como PYTHIA, HERWING, GEANT, CORSIKA se les suele denominar como simuladores de Monte Carlo, los cuales cumplen  con dos necesidades,
+la primera es aproximar el modelo estadistico al muestrar de un espacio enorme de procesos no observados o latentes y la segunda es generar una base de datos.\\
+
+Entre las tareas de bajo nivel se tiene la identificacion de particulas y la reconstruccion de la energia/momento de la particula en cuestion.
+Debido a que los simuladores completos que describen las interacciones de las particulas con la materia, son computacionalmente intensos
+y se llevan gran parte del presupuesto computacional de las colaboraciones, los simuladores rapidos son escenciales.
+Simuladores como GEANT y CORSIKA que generan una excelente descripcion de interacciones hadronicas son lentos.
+En los ultimos anos ha nacido un gran interes por usar redes neuronales generativas para aumentar la velocidad de las simulaciones y tal vez
+llegar a usar estos metodos directamente en datos generados por colisiones reales y hacer tunning en en el momento.\\
+
+El presente trabajo esta fundamentado en el desarrollo de algoritmos de aprendizaje maquina profundo, especificamente reges generativas GAN 
+para la generacion de interacciones hadronicas. Esto debido a la necesidad de generar simulaciones precisas y de una manera mas rapida,
+ya que actualizaciones a dichos experimentos como el de Alta Luminosidad al LHC exigiran una mayor capacidad computacional que no se tiene con la proyeccion de presupuestos actuales.
+Existe un gran interes por parte de la comunidad en usar metodos de aprendizaje no supervisado como GANs o VAEs para generar espacios de caracteristicas con una dimensionalidad alta.\\
+Uno de los mayores desafios que hay al usar estos metodos es como cuantificar su desempeno.
 
 \section{Plantamiento del problema}
 
 
-\section{Objetivo de la tesis}
+Sera posible disenar y entrenar a una aquitectura generativa que genere simulaciones de cascadas hadronicas precisas, que no mezcle
+sus paramatros latentes y asi como en los simuladores tradicionales, poder ajustar esos parametros.
 
+
+\section{Objetivo de la tesis}
+Objetivo principal:
+\begin{itemize}
+    \item Disenar una arquitectura generativa que genere cascadas hadornicas y no mezcle sus parametros latentes.
+\end{itemize}
+
+Objetivos particulares:
+\renewcommand{\theenumi}{\roman{enumi}}%
+\begin{enumerate}
+    \item Disenar una arquitectura que integre algunos metodos de aprendizaje no supervisado para la simulacion de interacciones hadronicas.
+    \item Mostrar el algoritmo que genera las simulaciones y comparar con simulaciones generadas usado CORSIKA.
+\end{enumerate}
 
 \section{Delimitacion del tema}
 
