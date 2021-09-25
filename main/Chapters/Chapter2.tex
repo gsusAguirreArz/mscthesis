@@ -10,7 +10,64 @@
 
 \section{Antecedentes}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+La fisica de particulas se encarga de estudiar los constituyentes subatomicos de la materia para asi poder responder a preguntas fundamentales como, Cuantas particulas hay?, Cuales son sus propiedades? y Como interactuan?.  Responder a estas preguntas llevaran a direcciones favorables para la solucion de problemas como la naturaleza de la masa y de la antimateria, la dimensionalidad del espacio, la unificacion de las fuerzas fundamentales y el refinamiento del modelo estandar. 
+Para comenzar a responder estas preguntas se tienen dos enfoques basicos, el teorico y el experimental. Por el lado teorico hay limitantes en la teoria actual y para probar la validez de otras teorias los experimentos son esenciales.
+
+Uno de los experimentos mas importantes que reflejan el estado del arte del campo es el Gran Colisionador de Hadornes (LHC), el cual tuvo uno de sus mayores logros al encontrar el Boson de Higgs en el 2012.
+
+Schwartz2021
+La fisica de particulas estudia los constituyentes dsubatomicos de la materia, preguntas como: Cuantas hay? Que propiedades tienen? Como interactuan? Hay dos maneras basicas de comenzar a responder estas preguntas: una teorica y otra experimental. Pero por el lado teorico hay limitantes en cunato a la teoria establecida. para probar alguna de las otras teorias los experimentos son esenciales. 
+Uno de los experimentos mas importantes es el LHC el cual uno de sus mayores logros fue encontrar el Boson de Higgs en 2012. usualmente las particulas generadas en las colisiones del LHC viven por fracicones de segundo. (la vida del Boson de Higgs es de $10^{-22}s$ esto hace que el arte de la fisica de particulas experimental moderna involucre encontrar diciadores de que una particula fue creada a pesar de que nunca la vimos. 
+Por ejemplo solo una en un billos de colisiones de protones en el LHC produce un Boson de Higgs y solo uno de cada 10000 de estos son faciles de ver. 
+Encontrar nuevas particulas es como intantar encontrar un tipo particular de paja en un pajar. 
+Afortunadamente los problemas del tipo paja en pajar son en los que el aprendizaje maquina es excelente resolviendo.
+
+Hay dos aspectos de los problemas de HEP que los ahcen unicos comparados con otros campos donde el AM se aplica. 
+La primera es que la fisica de paprticulas esta fovernada por la mecanica cuantica. AAsi como el gato de schridinger una colision en el LHC puede producir un boson de higgs o no producirlo al mismo tiempo. 
+
+
+Bourilkov2019
+La manera tradicional de analizar datos o generar datos es desarrollar algoritmos basados en conocimiento, despues implementarlos en software y usar los programas resultants para analisis o generacion. Ete proceso es complejo y analizar datasets complejos con muchas inputs variables se vuelve una tarea intractable. El AM atacan estre problema de una manera diferente, en vez de que los humanos creen estos algoritmos altamente especializados, los algoritmos aprenden de los datos para construir el modelo. Estos modelos pueden predecir el comportamiento de nuevos datos, para detectar anomalias o generar datos simulados.
+
+Con los metodos tradicionales de analisis, la fisica ha avanzado rapidamente, estableciendo el Modelo Estandar de la fisica de particulas y su analogo cosmologico Lambda CDM. En los anios venideros aumentara el volumen de datos y la complejidad de analisis en experimentos como el LHC por lo tanto extraer la fisica de fondo usando los metodos tradicionales se vuelve mas complejo o siemplemente imposbile en tiempos razonables.
+
+Las primeras aplicaciones de AM en HEP usualmente usabana arboles de decisiones: un modelo tipo arbol para tomar decisiones, comenzando en la raiz, subiendo hasta las hojas donde cada hoja representa una desicion. En el campo las tecnicas mas usadas son BDT Booosted Desicion Trees que convierten weak to strong learners.
+
+
+
+Albertsson2019
+Principales objetivos en la era post boson de Higgs:
+Aprovecahr al maximo todo el potencial del LHC y su actualizacion de alta luminosidad HL LHC para exoerimentos de neutrinos actuales y futuros.
+La actualizacion HL LHC integrara datos que son 20 mayores que los datos actulaes que produce el LHC. Trayendo consigo nuevos desafios cualitativos y cunatitativos debido a los tamanos de los eventos, volumenes de datos y complejidad. 
+El alcance de os experimentos estara limitado por el desempeno de los algoritmos y los recursos computacionales.
+
+Para incorporar tecnicas de aprnedizaje maquina en flujos de trabajo de HEP se requeriran avances en la investigacion y el desarrollo en los proximos 5 anios.
+Algunas areas donde se necesitan mejoras significativas son:
+Desempenio en los algoritmos de reconstruccion y analsis.
+Tiempo de ejecucion de partes computacionalmente expensive de simulacion de eventos, reconocimiento de patrones y calibracion
+Implementacion en tiempo real de algortimos de AM
+Reduccion de la huella de los datos, usando comprension de datos, ubicacion y acceso.
+
+Los principales objetivos de los experimentos dentro de HEP van de la mano uno ocn el otro, probar el modelo estandar con mayor presicion y buscar nuevas particulas que el modelo estandar no contempla.
+Ambas tareas implican la identificacion de senales extranas en fondos de ruido immenso.
+Al aumentar el numero de colisiones observadas con la actualizacion HL LHC hace que lo anterior se vuelva un gran desafio.
+
+Los algoritmos de AM que actualmente se usan con mayor frecuencia en el campo HEP son Boosted Decision Trees (BDTs) y redes neuronaless (NNs).
+Tipicamente se seleccionan als variables relevantes a la fisica y el modelo de AM se entrena para clasificar o hacer regresion usando senales y eventos de fondo (instancias). 
+Entrenar el modelo es el paso que conlleva mas trabajo tanto humano como de los recursos computacionales, mientras que el paso de inferencia es relativamente barato. 
+BDTs y NNs son usados para clasificar particulas y eventos.
+Para regresion se usa para obtener el mejor estimado de la energia de una particula basado en los measurements de varios detectores.
+Delas arquitecturas de NNs mas usadas en HEP se tienen las FCN, CNN y RNN. Adicionando modelos generativos como GANs (recientemente) o VAEs.
+La gran mayoria de algoritmos de AM se usan para analisis de series de tiempo. En general no son relevantes para el analisis de datos de HEP ya que lso eventos son independiewntes uno del otro. 
+
+
+Guest2018
+En la fisica de particulas el AM tiene muchas aplicaciones ya que muchas tareas implican clasificacion en espacios de alta dimensionalidad. 
+En los niveles mas bajos la herramientas de AM pueden reconstruir o encontrar tracks en detectores individuales. 
+Usando la informacion de varios detectores y identificacion de objetos podemos identificar eelctrones, protones o tau leptones.
+Estas herramientas tambien son ampliamente usadas para clasificacion de eventos como background like o signal like tanto al final del analisis estadistico y en el trigger incial.
+En aplicaciones de alto nivel hay trabajos en la busqueda del t quark, la busqueda del Boson de Higgs y el descubrimiento del Boson de Higgs.
+
 
 \section{Aprendizaje unsupervisado}
 

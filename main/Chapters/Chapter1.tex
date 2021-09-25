@@ -37,27 +37,28 @@ llegar a usar estos metodos directamente en datos generados por colisiones reale
 El presente trabajo esta fundamentado en el desarrollo de algoritmos de aprendizaje maquina profundo, especificamente reges generativas GAN 
 para la generacion de interacciones hadronicas. Esto debido a la necesidad de generar simulaciones precisas y de una manera mas rapida,
 ya que actualizaciones a dichos experimentos como el de Alta Luminosidad al LHC exigiran una mayor capacidad computacional que no se tiene con la proyeccion de presupuestos actuales.
-Existe un gran interes por parte de la comunidad en usar metodos de aprendizaje no supervisado como GANs o VAEs para generar espacios de caracteristicas con una dimensionalidad alta.\\
-Uno de los mayores desafios que hay al usar estos metodos es como cuantificar su desempeno.
+Existe un gran interes por parte de la comunidad en usar metodos de aprendizaje no supervisado como GANs o VAEs para generar espacios de caracteristicas con una dimensionalidad alta.
+Uno de los mayores desafios que hay al usar estos metodos es como cuantificar su desempeno.\\
 
 \section{Plantamiento del problema}
 
+El planteamineto se fundamenta en lo siguiente:
 
-Sera posible disenar y entrenar a una aquitectura generativa que genere simulaciones de cascadas hadronicas precisas, que no mezcle
-sus paramatros latentes y asi como en los simuladores tradicionales, poder ajustar esos parametros.
+\emph{Sera posible disenar un metodo que utilize redes neuronales generativas que logre simular cascadas hadronicas precisas y a su vez la aquitectura no mezcle sus paramatros latentes que podrian estar asociados a la energia y momento de la particula.} 
 
 
 \section{Objetivo de la tesis}
 Objetivo principal:
 \begin{itemize}
-    \item Disenar una arquitectura generativa que genere cascadas hadornicas y no mezcle sus parametros latentes.
+    \item Disenar y implementar una red neuronal generativa que no mezcle sus parametros latentes para generar cascadas hadornicas acordes a simulaciones obtenidas por el software CORSIKA. 
 \end{itemize}
 
 Objetivos particulares:
 \renewcommand{\theenumi}{\roman{enumi}}%
 \begin{enumerate}
     \item Disenar una arquitectura que integre algunos metodos de aprendizaje no supervisado para la simulacion de interacciones hadronicas.
-    \item Mostrar el algoritmo que genera las simulaciones y comparar con simulaciones generadas usado CORSIKA.
+    \item Entrenar esa arquitectura con una base de datos generada medienta el software CORSIKA.
+    \item Mostrar el algoritmo que genera las simulaciones y comparar con simulaciones generadas mediante CORSIKA.
 \end{enumerate}
 
 \section{Delimitacion del tema}
