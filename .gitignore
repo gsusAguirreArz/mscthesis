@@ -1,2 +1,2 @@
-/main/out
-!/main/out/main.pdf
+./main/out
+!./main/out/main.pdf
