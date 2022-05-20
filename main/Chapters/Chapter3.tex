@@ -8,16 +8,74 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Introduccion}
+Este capítulo proporciona una breve y concreta introducción a los modelos generativos, su fundamento teórico y algunas de las principales áreas de investigación. Además de mostrar las principales aplicaciones en HEP.
 
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Fundamento teorico}
+\section{Introducción}
 
-%----------------------------------------------------------------------------------------
-%	SECTION 2
-%----------------------------------------------------------------------------------------
+Así como los modelos discriminativos han sido el centro del progreso en metodologías del aprendizaje máquina en los últimos años ya que es más sencillo monitorear su desempeño y así poder elegir la mejor metodología que se ajuste a la tarea. Los modelos generativos suelen ser más difíciles de evaluar, lo cual hace que encontrar aplicaciones industriales sea más complicado. 
 
-\section{Lineas de investigacion}
-\section{Tecnicas usadas}
+Los modelos generativos han probado su efectividad para generar muestras que son capaces de imitar a observaciones reales así como rostros humanos con StyleGAN de NVIDIA o GPT3 de openAI para generar texto. Los modelos anteriores han impulsado el interés para expandir el campo del aprendizaje de máquina a través de modelos que aprenden a generar muestras indistinguibles de observaciones reales. Los avances en el campo podrían ser fundamentales para el desarrollo de una máquina que haya adquirido una inteligencia comparable a la de los humanos.
+
+El campo de los modelos generativos es diverso y la definición de los problemas toman una gran variedad de formas. Sin embargo, para cada tarea, los desafíos que se tienen son los mismos. Entender cómo  es que el modelo maneja un alto grado de dependencias condicionales entre las características de la observación y como es que logra encontrar una observación viable, en un espacio de alta dimensionalidad, que concuerda con los datos observados a partir de un conjunto pequeño de observaciones, es de vital importancia para desarrollar metodologías más robustas.
+
+\subsection{Fundamento teórico}
+
+Como punto de partida se debe de reconocer la diferencia clave entre los modelos discriminativos y los modelos generativos. 
+
+Def.
+
+Los modelos discriminativos estiman p(y|x) - la probabilidad del observable y dada la observación x.
+
+Los modelos generativos estiman p(x) - la probabilidad de observar x.
+
+En otras palabras, los modelos discriminativos intentan estimar la probabilidad de que una observación x pertenezca a la categoría y, y los modelos generativos intentan estimar la probabilidad de ver la observación x. Por lo tanto el modelo debe de ser probabilístico en vez de ser determinista y debe incluir un elemento estocástico que influencia las observaciones individuales generadas por el modelo.
+
+\section{Líneas de investigación}
+
+Detrás del creciente interés en la academia por los modelos generativos se encuentran dos razones con una gran importancia teórica, que se describen a continuación:
+
+Se debe de buscar un entendimiento completo de cómo se generan las observaciones para así poder formar inteligencias artificiales más sofisticadas que van más allá de lo que pueden lograr los modelos discriminativos. 
+
+Es altamente probable que los modelos generativos sean centrales para futuros desarrollos  en otros campos del aprendizaje máquina.
+
+\section{Modelos generativos}
+
+Un modelo generativo describe cómo se genera un conjunto de observaciones en términos de un modelo probabilístico. Al generar muestras de este modelo, se es capaz de generar observaciones nunca antes vistas. 
+
+Al tener un conjunto de observaciones que representen la entidad que se quiere generar. El objetivo del modelo generativo es generar nuevas observaciones que sigan las mismas reglas con las cuales las observaciones originales fueron generadas. Lo anterior es posible debido a que se asume que existe alguna distribución de probabilidad que explica, porqué ciertas observaciones son más probables de encontrarse en un conjunto y otras no. 
+
+El trabajo del modelo es imitar una distribución desconocida lo más cercano posible, para luego muestrear de ella y generar nuevas observaciones, distintas de las conocidas, que además parezca que son parte del conjunto de entrenamiento.
+
+El marco de trabajo de los modelos generativos es el siguiente:
+
+1 Se tiene un conjunto de datos de observaciones $X$.
+
+2 Se asume que las observaciones $X$ se generaron de acuerdo a una distribución de probabilidad desconocida $p_{datos}$.
+
+3 Se diseña un modelo generativo $p_{modelo}$ que intenta imitar a $p_{datos}$.
+
+4 Se muestrea de $p_{modelo}$ para generar observaciones que parecen ser obtenidas de $p_{datos}$.
+
+Consideramos que $p_{modelo}$ hace un buen trabajo si:
+
+Puede generar observaciones que parecen ser obtenidas de $p_{datos}$.
+
+Puede generar observaciones que son sustancialmente diferentes a las observadas en X. En otras palabras, el modelo no debería de reproducir cosas que ya conoce.
+
+\subsection{Conceptos básicos}
+
+Def:
+
+Espacio Muestral
+
+El espacio muestral es el conjunto de todos los posibles valores que una observación x puede tomar.
+
+Función de densidad de probabilidad
+
+Una función de densidad de probabilidad, $p(x)$, es una función que mapea un punto x del espacio muestral a un número entre 0 y 1. La suma de la función de densidad sobre todos los puntos del espacio muestral es igual a 1 para que sea una distribución bien definida.
+
+Por definición tenemos que solo existe una $p_{datos}$ pero existen infinitas distribuciones $p_{modelo}$ que pueden estimar $p_{datos}$. Para encontrar una distribución adecuada se tiene que usar un modelo paramétrico.
+
+Modelo paramétrico
+
+Un modelo paramétrico, $p_{\theta}(x)$, es una familia de funciones de densidad que pueden ser descritas por medio de un número finito de parámetros, $\theta$.

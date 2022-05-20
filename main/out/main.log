@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.26)  12 MAY 2022 05:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.26)  20 MAY 2022 11:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -394,7 +394,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count335
@@ -518,10 +518,10 @@ Package biblatex Info: ... file 'blx-natbib.def' found.
 File: blx-natbib.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
@@ -529,17 +529,21 @@ File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count412
 \c@bbx:relatedtotal=\count413
 ))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -659,7 +663,7 @@ Package csquotes Info: ... found 'babel' package.
  (out/main.aux (out/Extras/TitlePage.aux)
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
- (out/Extras/Declaration.aux) (out/Extras/Quotation.aux) (out/Extras/Abstract.aux) (out/Extras/Acknowledgements.aux) (out/Extras/Abbreviations.aux) (out/Extras/Constants.aux) (out/Extras/Symbols.aux) (out/Chapters/Chapter1.aux) (out/Chapters/Chapter2.aux) (out/Chapters/Chapter3.aux) (out/Chapters/Chapter4.aux) (out/Chapters/Chapter5.aux) (out/Chapters/Chapter6.aux) (out/Chapters/LatexChapter.aux) (out/Appendices/AppendixA.aux))
+ (out/Extras/Declaration.aux) (out/Extras/Quotation.aux) (out/Extras/Abstract.aux) (out/Extras/Acknowledgements.aux) (out/Extras/Abbreviations.aux) (out/Extras/Constants.aux) (out/Extras/Symbols.aux) (out/Chapters/Chapter1.aux) (out/Chapters/Chapter2.aux) (out/Chapters/Chapter3.aux) (out/Chapters/Chapter4.aux) (out/Chapters/Chapter5.aux) (out/Chapters/Chapter6.aux) (out/Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -807,7 +811,43 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (out/main.bbl)
+ (out/main.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Carminati2018':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Carminati2020':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Erdmann2018b':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Erdmann2019':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Erdmann2018':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Paganini2017':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Paganini2017b':
+(biblatex)                - Invalid format of field 'month'.
+
+)
 Package biblatex Info: Reference section=0 on input line 58.
 Package biblatex Info: Reference segment=0 on input line 58.
 \AtBeginShipoutBox=\box63
@@ -852,7 +892,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 \openout2 = `Extras/TitlePage.aux'.
 
 (./Extras/TitlePage.tex
-<Figures/Logos/escudo_IPN.png, id=273, 1235.61626pt x 1323.94624pt>
+<Figures/Logos/escudo_IPN.png, id=160, 1235.61626pt x 1323.94624pt>
 File: Figures/Logos/escudo_IPN.png Graphic file (type png)
 <use Figures/Logos/escudo_IPN.png>
 Package pdftex.def Info: Figures/Logos/escudo_IPN.png  used on input line 5.
@@ -862,7 +902,7 @@ Overfull \hbox (12.79524pt too wide) in paragraph at lines 5--6
  [] 
  []
 
-<Figures/Logos/escudo_cic.png, id=278, 469.755pt x 341.275pt>
+<Figures/Logos/escudo_cic.png, id=165, 469.755pt x 341.275pt>
 File: Figures/Logos/escudo_cic.png Graphic file (type png)
 <use Figures/Logos/escudo_cic.png>
 Package pdftex.def Info: Figures/Logos/escudo_cic.png  used on input line 32.
@@ -946,20 +986,11 @@ LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 
 1: section
-[11]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 55.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 55.
- [12])
+[11])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [13] [14
-
-] (out/main.lof
+ [12] (out/main.lof
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
@@ -968,7 +999,9 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 1: section
-[15] [16
+[13
+
+] [14
 
 ] (out/main.lot
 LaTeX Info: Redefining \. on input line 2.
@@ -979,33 +1012,33 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 1: section
-[17]
+[15]
 \openout2 = `Extras/Abbreviations.aux'.
 
- (./Extras/Abbreviations.tex [18
+ (./Extras/Abbreviations.tex [16
+
+
+])
+1: section
+[17]
+\openout2 = `Extras/Constants.aux'.
+
+ (./Extras/Constants.tex [18
+
 
 
 ])
 1: section
 [19]
-\openout2 = `Extras/Constants.aux'.
-
- (./Extras/Constants.tex [20
-
-
-
-])
-1: section
-[21]
 \openout2 = `Extras/Symbols.aux'.
 
- (./Extras/Symbols.tex [22
+ (./Extras/Symbols.tex [20
 
 
 
 ])
 1: section
-[23] [24
+[21] [22
 
 
 ]
@@ -1013,7 +1046,7 @@ LaTeX Info: Redefining \% on input line 2.
  Dedicatory
 --------------------
 1: section
-[25] [26
+[23] [24
 
 ]
 1: section
@@ -1025,102 +1058,109 @@ Cap\'{\i }tulo 1.
 [1
 
 
-])
+]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [2])
 LaTeX Info: Redefining \. on input line 140.
 LaTeX Info: Redefining \% on input line 140.
- [2]
+ [3]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex
-Cap\'{\i }tulo 2.
-1: section
-[3
+ (./Chapters/Chapter2.tex [4
 
 
 
 ]
-<Figures/showercomponents-jpg.jpg, id=509, 823.075pt x 947.54pt>
+Cap\'{\i }tulo 2.
+1: section
+[5]
+<Figures/showercomponents-jpg.jpg, id=385, 823.075pt x 947.54pt>
 File: Figures/showercomponents-jpg.jpg Graphic file (type jpg)
 <use Figures/showercomponents-jpg.jpg>
 Package pdftex.def Info: Figures/showercomponents-jpg.jpg  used on input line 37.
 (pdftex.def)             Requested size: 411.53648pt x 473.76883pt.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
- [4 <./Figures/showercomponents-jpg.jpg>]
-File: Figures/showercomponents-jpg.jpg Graphic file (type jpg)
-<use Figures/showercomponents-jpg.jpg>
-Package pdftex.def Info: Figures/showercomponents-jpg.jpg  used on input line 51.
-(pdftex.def)             Requested size: 411.53648pt x 473.76883pt.
-<Figures/eas-jpg.jpg, id=514, 1527.7075pt x 1573.88pt>
+ [6 <./Figures/showercomponents-jpg.jpg>]
+<Figures/logitudinaldistribution.jpeg, id=392, 356.0502pt x 250.536pt>
+File: Figures/logitudinaldistribution.jpeg Graphic file (type jpg)
+<use Figures/logitudinaldistribution.jpeg>
+Package pdftex.def Info: Figures/logitudinaldistribution.jpeg  used on input line 51.
+(pdftex.def)             Requested size: 178.02466pt x 125.26768pt.
+<Figures/eas-jpg.jpg, id=394, 1571.8725pt x 1608.0075pt>
 File: Figures/eas-jpg.jpg Graphic file (type jpg)
 <use Figures/eas-jpg.jpg>
-Package pdftex.def Info: Figures/eas-jpg.jpg  used on input line 77.
-(pdftex.def)             Requested size: 763.85188pt x 786.93808pt.
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
- [5]
-<Figures/All-particle-cosmic-rays-energy-spectrum.jpg, id=520, 572.1375pt x 667.49374pt>
+Package pdftex.def Info: Figures/eas-jpg.jpg  used on input line 75.
+(pdftex.def)             Requested size: 785.93434pt x 804.0018pt.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+ [7 <./Figures/logitudinaldistribution.jpeg>]
+<Figures/All-particle-cosmic-rays-energy-spectrum.jpg, id=400, 572.1375pt x 667.49374pt>
 File: Figures/All-particle-cosmic-rays-energy-spectrum.jpg Graphic file (type jpg)
 <use Figures/All-particle-cosmic-rays-energy-spectrum.jpg>
-Package pdftex.def Info: Figures/All-particle-cosmic-rays-energy-spectrum.jpg  used on input line 97.
+Package pdftex.def Info: Figures/All-particle-cosmic-rays-energy-spectrum.jpg  used on input line 95.
 (pdftex.def)             Requested size: 286.06804pt x 333.74606pt.
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
- [6 <./Figures/eas-jpg.jpg>]
-LaTeX Info: Redefining \. on input line 119.
-LaTeX Info: Redefining \% on input line 119.
- [7 <./Figures/All-particle-cosmic-rays-energy-spectrum.jpg>]
-File: Figures/All-particle-cosmic-rays-energy-spectrum.jpg Graphic file (type jpg)
-<use Figures/All-particle-cosmic-rays-energy-spectrum.jpg>
-Package pdftex.def Info: Figures/All-particle-cosmic-rays-energy-spectrum.jpg  used on input line 127.
-(pdftex.def)             Requested size: 286.06804pt x 333.74606pt.
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [8]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
- [9])
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [8 <./Figures/eas-jpg.jpg>]
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+ [9 <./Figures/All-particle-cosmic-rays-energy-spectrum.jpg>]
+<Figures/asico-jpg.jpg, id=409, 1688.3075pt x 1214.5375pt>
+File: Figures/asico-jpg.jpg Graphic file (type jpg)
+<use Figures/asico-jpg.jpg>
+Package pdftex.def Info: Figures/asico-jpg.jpg  used on input line 125.
+(pdftex.def)             Requested size: 844.15169pt x 607.26727pt.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [10 <./Figures/asico-jpg.jpg>])
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
- [10]
+ [11]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex
-Cap\'{\i }tulo 3.
-)
-1: section
-[11
+ (./Chapters/Chapter3.tex [12
 
 
 
 ]
+Cap\'{\i }tulo 3.
+1: section
+[13]
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+ [14])
+LaTeX Info: Redefining \. on input line 142.
+LaTeX Info: Redefining \% on input line 142.
+ [15]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [12
+ (./Chapters/Chapter4.tex [16
 
 
 
 ]
 Cap\'{\i }tulo 4.
 1: section
-[13])
+[17])
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
- [14]
+ [18]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex
 Cap\'{\i }tulo 5.
 )
 1: section
-[15
+[19
 
 
 
 ]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [16
+ (./Chapters/Chapter6.tex [20
 
 
 
@@ -1128,88 +1168,45 @@ Cap\'{\i }tulo 5.
 Cap\'{\i }tulo 6.
 )
 1: section
-[17]
-\openout2 = `Chapters/LatexChapter.aux'.
-
- (./Chapters/LatexChapter.tex [18
-
-
-
-]
-Cap\'{\i }tulo 7.
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-) (./Code/dfa.py
-1: section
-[19]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [20])
-Overfull \hbox (6.00754pt too wide) in paragraph at lines 51--53
-\T1/ppl/m/n/10 are shown on this pa-ge: [][]$\T1/cmtt/m/n/10 http : / / www . sunilpatel . co . uk / latex-[]type / latex-[]math-[]symbols/$[][] 
- []
-
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
 [21]
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
- [22]
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
- [23]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 138.
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
- [24]
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
- [25]
-LaTeX Info: Redefining \. on input line 205.
-LaTeX Info: Redefining \% on input line 205.
- [26]
-<Figures/Electron.pdf, id=743, 398.3386pt x 284.52756pt>
-File: Figures/Electron.pdf Graphic file (type pdf)
-<use Figures/Electron.pdf>
-Package pdftex.def Info: Figures/Electron.pdf  used on input line 264.
-(pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
-LaTeX Info: Redefining \. on input line 268.
-LaTeX Info: Redefining \% on input line 268.
- [27]
-LaTeX Info: Redefining \. on input line 287.
-LaTeX Info: Redefining \% on input line 287.
- [28 <./Figures/Electron.pdf>])
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
- [29]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [30
+ (./Appendices/AppendixA.tex [22
 
 
 
 ]
 Ap\'{e}ndice A.
-)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 11.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
 1: section
-[31] [32
+[23] [24
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
+Overfull \hbox (7.38393pt too wide) in paragraph at lines 165--165
+\T1/ppl/m/sc/10 url\T1/ppl/m/n/10 : [][]$\T1/cmtt/m/n/10 http : / / www . auger . org / archive / authors _ icrc _ 2019 . htmlhttps : / / inspirehep .
+ []
 
+
+Overfull \hbox (6.35571pt too wide) in paragraph at lines 165--165
+\T1/ppl/m/n/10 Layer Ca-lo-ri-me-ters^^T. En: \T1/ppl/m/it/10 Phy-si-cal Re-view Let-ters \T1/ppl/m/n/10 120.4 (2017). \T1/ppl/m/sc/10 doi\T1/ppl/m/n/10 : [][]$\T1/cmtt/m/n/10 10 . 1103 / PhysRevLett .
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
 1: section
-[33]
+[25]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
  (out/main.aux (out/Extras/TitlePage.aux)
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
- (out/Extras/Declaration.aux) (out/Extras/Quotation.aux) (out/Extras/Abstract.aux) (out/Extras/Acknowledgements.aux) (out/Extras/Abbreviations.aux) (out/Extras/Constants.aux) (out/Extras/Symbols.aux) (out/Chapters/Chapter1.aux) (out/Chapters/Chapter2.aux) (out/Chapters/Chapter3.aux) (out/Chapters/Chapter4.aux) (out/Chapters/Chapter5.aux) (out/Chapters/Chapter6.aux) (out/Chapters/LatexChapter.aux) (out/Appendices/AppendixA.aux))
+ (out/Extras/Declaration.aux) (out/Extras/Quotation.aux) (out/Extras/Abstract.aux) (out/Extras/Acknowledgements.aux) (out/Extras/Abbreviations.aux) (out/Extras/Constants.aux) (out/Extras/Symbols.aux) (out/Chapters/Chapter1.aux) (out/Chapters/Chapter2.aux) (out/Chapters/Chapter3.aux) (out/Chapters/Chapter4.aux) (out/Chapters/Chapter5.aux) (out/Chapters/Chapter6.aux) (out/Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C26B5CEB229DD9F3E7C09774D78AE310;11144.
+(rerunfilecheck)             Checksum: 351A88CE07529BD6F7F5D84C7014913E;6636.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1220,18 +1217,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29742 strings out of 481239
- 594763 string characters out of 5920377
- 1424991 words of memory out of 5000000
- 44253 multiletter control sequences out of 15000+600000
- 611423 words of font info for 174 fonts, out of 8000000 for 9000
+ 29045 strings out of 481239
+ 587896 string characters out of 5920377
+ 1091607 words of memory out of 5000000
+ 43722 multiletter control sequences out of 15000+600000
+ 590655 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,22n,85p,1150b,3914s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on out/main.pdf (59 pages, 961767 bytes).
+ 57i,21n,79p,947b,2624s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on out/main.pdf (49 pages, 1250166 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 848 compressed objects within 9 object streams
- 257 named destinations out of 1000 (max. 500000)
- 567 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 348 words of extra memory for PDF output out of 10000 (max. 10000000)
 

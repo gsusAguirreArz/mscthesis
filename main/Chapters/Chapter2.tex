@@ -15,8 +15,8 @@ El problema de reducir el costo computacional que experimentos en la física de 
 
 El aprendizaje máquina siempre ha estado presente en los flujos de trabajo de experimentos en HEP, sin embargo técnicas modernas del aprendizaje profundo han comenzado a introducirse a procesos de análisis. En específico se ha visto que los modelos generativos permiten acelerar los tiempos de generación de simulaciones, debido a lo anterior es de suma importancia estudiar estas técnicas para que así puedan ser agregadas a próximas versiones de simuladores como GEANTV, CORSIKA8, etc.
 
-Algunos investigadores que usan modelos generativos para acelerar simulaciones son Paganini, Erdmann, Carminati, Glombitza.
-Paganini et al desarrollaron una arquitectura llamada CaloGAN basada en redes generativas adversarias para acelerar simulaciones de cascadas de partículas en calorímetros LAr y así lograr generar cascadas electromagnéticas tridimensionales con una reducción de tiempo computacional cinco órdenes de magnitud menor de lo que le toma a GEANT4.
+Algunos investigadores que usan modelos generativos para acelerar simulaciones son Paganini \parencite{Paganini2017,Paganini2017b}, Erdmann \parencite{Erdmann2019,Erdmann2018}, Carminati \parencite{Carminati2018,Carminati2020}, Glombitza \parencite{Glombitza2020,Erdmann2018b}.
+Paganini \emph{et al} desarrollaron una arquitectura llamada CaloGAN basada en redes generativas adversarias para acelerar simulaciones de cascadas de partículas en calorímetros LAr y así lograr generar cascadas electromagnéticas tridimensionales con una reducción de tiempo computacional cinco órdenes de magnitud menor de lo que le toma a GEANT4.
 
 Erdmann et al usan una arquitectura WGAN para mejorar la estabilidad del entrenamiento y así poder reconstruir propiedades de la cascada simulada. El modelo lo condicionan a un parámetro físico y logran generar simulaciones de un arreglo de calorímetros. Mostrando así que las simulaciones se pueden adaptar para ajustar datos antes del entrenamiento de la red. 
 
@@ -40,15 +40,15 @@ Estudiar la fenomenología de los rayos cósmicos es de vital importancia para p
     \label{fig:showercomponents}
 \end{figure}
 
-Los rayos cósmicos son partículas aceleradas en la galaxia o en objetos astrofísicos extragalácticos que al impactar con la atmósfera terrestre generan cascadas de partículas. El consenso general es que rayos cósmicos debajo de energías de 3x10e6 GeV son acelerados en los remanentes de supernovas galácticas y para energías mayores no se tiene una clara idea de que es lo que acelera a estas partículas, lo único que se tiene claro es de que dichas partículas tienen un orígen extragaláctico. A modo de comparación estas fuentes aceleran partículas en tres órdenes de magnitud mayor que el equivalente energético del LHC.
+Los \textbf{rayos cósmicos} son partículas aceleradas en la galaxia o en objetos astrofísicos extragalácticos que al impactar con la atmósfera terrestre generan \textbf{cascadas de partículas} (Figura~\ref{fig:showercomponents}). El consenso general es que rayos cósmicos debajo de energías de 3x10e6 GeV son acelerados en los remanentes de supernovas galácticas y para energías mayores no se tiene una clara idea de que es lo que acelera a estas partículas, lo único que se tiene claro es de que dichas partículas tienen un orígen extragaláctico. A modo de comparación estas fuentes aceleran partículas en tres órdenes de magnitud mayor que el equivalente energético del LHC.
 
 Cuando la energía de los rayos cósmicos sobrepasa significativamente 1000 GeV estos tienen que ser estudiados por las cascadas de partículas que generan en la atmósfera. La mayoría de las cascadas son iniciadas por hadrones con energías que van desde 1000  GeV o mayores a 10 TeV, que al entrar isotrópicamente a la atmósfera producen un gran número de productos secundarios en una serie de colisiones sucesivas con los núcleos de los constituyentes atmosféricos ie. N2, O2, Ar. Estos productos secundarios resultantes se comportan de una manera similar, mientras se van propagando a través de la atmósfera.
 
-Las cascadas de partículas descritas anteriormente son conocidas como cascadas atmosféricas extensas EAS. Estas cascadas atmosféricas se propagan longitudinalmente a lo largo de la dirección de incidencia de la partícula primaria, debido al momento transversal de los productos secundarios la cascada también se extiende lateralmente. Como referencia de la complejidad que se tiene, una partícula primaria altamente energética puede crear una cascada gigante de partículas que se propaga esencialmente a la velocidad de la luz a través de la atmósfera y puede alcanzar el nivel del mar si el evento es lo suficientemente energético agregado a lo anterior el número de productos secundarios es del orden 10e10.
+Las cascadas de partículas descritas anteriormente son conocidas como \textbf{cascadas atmosféricas extensas} \emph{EAS}. Estas cascadas atmosféricas se propagan longitudinalmente a lo largo de la dirección de incidencia de la partícula primaria, debido al momento transversal de los productos secundarios la cascada también se extiende lateralmente. Como referencia de la complejidad que se tiene, una partícula primaria altamente energética puede crear una cascada gigante de partículas que se propaga esencialmente a la velocidad de la luz a través de la atmósfera y puede alcanzar el nivel del mar si el evento es lo suficientemente energético agregado a lo anterior el número de productos secundarios es del orden 10e10 (Figura~\ref{fig:logitudinaldist}).
 
 \begin{figure}
     \centering
-    \includegraphics[width=50mm,scale=0.5]{Figures/showercomponents-jpg.jpg}
+    \includegraphics[width=50mm,scale=0.5]{Figures/logitudinaldistribution.jpeg}
     \decoRule
     \caption[logitudinaldist]{caption figure 1}
     \label{fig:logitudinaldist}
@@ -58,19 +58,17 @@ Las cascadas de partículas descritas anteriormente son conocidas como cascadas 
 
 Algunas propiedades que caracterizan a las cascadas atmosféricas son:
 
-E0 [eV]: energía de la partícula primaria. 
-
-N (shower size): número total de partículas producidas en un nivel en particular de la atmósfera. Es una función que depende de la energía E0, ángulo de incidencia zenith angle y a altura de la primera interacción del evento primario en la atmósfera h1.
- 
-Xmax [$gcm^-2$]: profundidad de máximo desarrollo medida desde la parte más alta de la atmósfera. Se desfasa a profundidades mayores conforme la energía del primario se incrementa.
-
-Shower Axis: extensión del vector de momento del primario incidente en la dirección de propagación de la cascada.
-
-Dirección de arribo: dirección de incidencia de la partícula primaria determinada por sus ángulos azimutales y el ángulo zenith.
+\begin{itemize}
+    \item \textbf{E0} [eV]: energía de la partícula primaria. 
+    \item \textbf{N} (\emph{shower size}): número total de partículas producidas en un nivel en particular de la atmósfera. Es una función que depende de la energía E0, ángulo de incidencia zenith angle y a altura de la primera interacción del evento primario en la atmósfera h1.
+    \item \textbf{Xmax} [$gcm^-2$]: profundidad de máximo desarrollo medida desde la parte más alta de la atmósfera. Se desfasa a profundidades mayores conforme la energía del primario se incrementa.
+    \item \textbf{Shower Axis}: extensión del vector de momento del primario incidente en la dirección de propagación de la cascada.
+    \item \textbf{Dirección de arribo}: dirección de incidencia de la partícula primaria determinada por sus ángulos azimutales y el ángulo zenith.
+\end{itemize}
 
 \subsection{Métodos de detección}
 
-Los principales detectores de cascadas atmosféricas son arreglos de detectores espaciados uno del otro en distancias que dependen de la energía de los rayos cósmicos que se quieren observar. Para energías de 10e6 Gev la distancia entre los detectores deben de ser del orden de decenas de metros y para energías que sobrepasan 10e9 GeV la distancia es del orden de miles de metros, por ejemplo en el observatorio Pierre Auger la distancia entre detectores es de 1500m. Diferentes métodos observacionales como detectores de aire cherenkov o detectores de fluorescencia son combinados con estos arreglos como en el caso del observatorio Pierre Auger.
+Los principales detectores de cascadas atmosféricas son arreglos de detectores espaciados uno del otro en distancias que dependen de la energía de los rayos cósmicos que se quieren observar. Para energías de 10e6 GeV la distancia entre los detectores deben de ser del orden de decenas de metros y para energías que sobrepasan 10e9 GeV la distancia es del orden de miles de metros, por ejemplo en el observatorio Pierre Auger la distancia entre detectores es de 1500m. Diferentes métodos observacionales como detectores de aire cherenkov o detectores de fluorescencia son combinados con estos arreglos como en el caso del observatorio Pierre Auger (Figura~\ref{fig:eas}).
 
 \begin{figure}
     \centering
@@ -124,7 +122,7 @@ Para simular una cascada completa se comienza con la simulación de la cascada h
 
 \begin{figure}
     \centering
-    \includegraphics[width=50mm,scale=0.5]{Figures/All-particle-cosmic-rays-energy-spectrum.jpg}
+    \includegraphics[width=50mm,scale=0.5]{Figures/asico-jpg.jpg}
     \decoRule
     \caption[asicoarq]{caption figure 1}
     \label{fig:asicoarq}

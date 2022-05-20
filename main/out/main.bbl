@@ -16,156 +16,612 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}
-  \entry{Reference3}{article}{}
-    \name{author}{4}{}{%
-      {{hash=AAS}{%
-         family={Arnold},
-         familyi={A\bibinitperiod},
-         given={A.\bibnamedelima S.},
-         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+\datalist[entry]{nty/global//global/global}
+  \entry{Carminati2018}{article}{}
+    \name{author}{6}{}{%
+      {{hash=CF}{%
+         family={Carminati},
+         familyi={C\bibinitperiod},
+         given={F},
+         giveni={F},
       }}%
-      {{hash=WJS}{%
-         family={Wilson},
-         familyi={W\bibinitperiod},
-         given={J.\bibnamedelima S.},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      {{hash=GA}{%
+         family={Gheata},
+         familyi={G\bibinitperiod},
+         given={A},
+         giveni={A},
       }}%
-      {{hash=BMG}{%
-         family={Boshier},
-         familyi={B\bibinitperiod},
-         given={M.\bibnamedelima G.},
-         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      {{hash=KG}{%
+         family={Khattak},
+         familyi={K\bibinitperiod},
+         given={G},
+         giveni={G},
       }}%
-      {{hash=SJ}{%
-         family={Smith},
+      {{hash=LPM}{%
+         family={Lorenzo},
+         familyi={L\bibinitperiod},
+         given={P\bibnamedelima Mendez},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sharan},
          familyi={S\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+      {{hash=VS}{%
+         family={Vallecorsa},
+         familyi={V\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{CF+1}
+    \strng{fullhash}{CFGAKGLPMSSVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    We present the first application of three-dimensional convolutional
+  Generative Adversarial Network to High Energy Physics simulation. We generate
+  three-dimensional images of particles depositing energy in high granularity
+  calorimeters. This is the first time such an approach is taken in HEP where
+  most of data is three-dimensional in nature but it is customary to convert it
+  into two-dimensional slices. The present work proves the success of using
+  three dimensional convolutional GAN. Energy showers are well reproduced in
+  all dimensions and show a good agreement with standard techniques (Geant4
+  detailed simulation). We also demonstrate the ability to condition training
+  on several parameters such as particle type and energy. This work aims at
+  proving that deep learning techniques represent a valid fast alternative to
+  standard Monte Carlo approaches. It is part of the GeantV project.%
+    }
+    \verb{doi}
+    \verb 10.1088/1742-6596/1085/3/032016
+    \endverb
+    \field{issn}{1742-6596}
+    \field{number}{3}
+    \field{pages}{032016}
+    \field{title}{{Three dimensional Generative Adversarial Networks for fast
+  simulation}}
+    \verb{url}
+    \verb https://iopscience.iop.org/article/10.1088/1742-6596/1085/3/032016 ht
+    \verb tps://iopscience.iop.org/article/10.1088/1742-6596/1085/3/032016/meta
+    \endverb
+    \field{volume}{1085}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Carminati et al. - 2018 - Three dimensional Generative Adversarial
+    \verb Networks for fast simulation.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Physics: Conference Series}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Carminati2020}{article}{}
+    \name{author}{9}{}{%
+      {{hash=CF}{%
+         family={Carminati},
+         familyi={C\bibinitperiod},
+         given={Federico},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Khattak},
+         familyi={K\bibinitperiod},
+         given={Gulrukh},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Loncar},
+         familyi={L\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=NTQ}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Thong\bibnamedelima Q.},
+         giveni={T\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pierini},
+         familyi={P\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={{Brito Da Rocha}},
+         familyi={B\bibinitperiod},
+         given={Ricardo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=STK}{%
+         family={Samaras-Tsakiris},
+         familyi={S\bibinithyphendelim T\bibinitperiod},
+         given={Konstantinos},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vallecorsa},
+         familyi={V\bibinitperiod},
+         given={Sofia},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VJR}{%
+         family={Vlimant},
+         familyi={V\bibinitperiod},
+         given={Jean\bibnamedelima Roch},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{CF+2}
+    \strng{fullhash}{CFKGLVNTQPMBRSTKVSVJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Deep Learning techniques are being studied for different applications by
+  the HEP community: in this talk, we discuss the case of detector simulation.
+  The need for simulated events, expected in the future for LHC experiments and
+  their High Luminosity upgrades, is increasing dramatically and requires new
+  fast simulation solutions. Here we present updated results on the development
+  of 3DGAN, one of the first examples using three-dimensional convolutional
+  Generative Adversarial Networks to simulate high granularity electromagnetic
+  calorimeters. In particular, we report on two main aspects: results on the
+  simulation of a more general, realistic physics use case and on data parallel
+  strategies to distribute the training process across multiple nodes on public
+  cloud resources.%
+    }
+    \verb{doi}
+    \verb 10.1088/1742-6596/1525/1/012064
+    \endverb
+    \field{issn}{1742-6596}
+    \field{number}{1}
+    \field{pages}{012064}
+    \field{title}{{Generative Adversarial Networks for fast simulation}}
+    \verb{url}
+    \verb https://iopscience.iop.org/article/10.1088/1742-6596/1525/1/012064 ht
+    \verb tps://iopscience.iop.org/article/10.1088/1742-6596/1525/1/012064/meta
+    \endverb
+    \field{volume}{1525}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Carminati et al. - 2020 - Generative Adversarial Networks for fast
+    \verb simulation.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Physics: Conference Series}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Erdmann2018b}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EM}{%
+         family={Erdmann},
+         familyi={E\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Glombitza},
+         familyi={G\bibinitperiod},
          given={J.},
          giveni={J\bibinitperiod},
       }}%
+      {{hash=WD}{%
+         family={Walz},
+         familyi={W\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{AAS+1}
-    \strng{fullhash}{AASWJSBMGSJ1}
+    \list{publisher}{1}{%
+      {North-Holland}%
+    }
+    \keyw{Air showers,Cosmic rays,Deep learning,UHECR}
+    \strng{namehash}{EMGJWD1}
+    \strng{fullhash}{EMGJWD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1998}
-    \field{labeldatesource}{}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
     \field{abstract}{%
-    Operating a laser diode in an extended cavity which provides
-  frequency-selective feedback is a very effective method of reducing the
-  laser's linewidth and improving its tunability. We have developed an
-  extremely simple laser of this type, built from inexpensive commercial
-  components with only a few minor modifications. A 780~nm laser built to this
-  design has an output power of 80~mW, a linewidth of 350~kHz, and it has been
-  continuously locked to a Doppler-free rubidium transition for several days.%
+    We describe a method of reconstructing air showers induced by cosmic rays
+  using deep learning techniques. We simulate an observatory consisting of
+  ground-based particle detectors with fixed locations on a regular grid. The
+  detector's responses to traversing shower particles are signal amplitudes as
+  a function of time, which provide information on transverse and longitudinal
+  shower properties. In order to take advantage of convolutional network
+  techniques specialized in local pattern recognition, we convert all
+  information to the image-like grid of the detectors. In this way, multiple
+  features, such as arrival times of the first particles and optimized
+  characterizations of time traces, are processed by the network. The
+  reconstruction quality of the cosmic ray arrival direction turns out to be
+  competitive with an analytic reconstruction algorithm. The reconstructed
+  shower direction, energy and shower depth show the expected improvement in
+  resolution for higher cosmic ray energy.%
     }
-    \field{number}{3}
-    \field{pages}{1236\bibrangedash 1239}
-    \field{title}{A Simple Extended-Cavity Diode Laser}
-    \verb{url}
-    \verb http://link.aip.org/link/?RSI/69/1236/1
+    \verb{doi}
+    \verb 10.1016/J.ASTROPARTPHYS.2017.10.006
     \endverb
-    \field{volume}{69}
-    \field{journaltitle}{Review of Scientific Instruments}
-    \field{month}{03}
-    \field{year}{1998}
+    \field{issn}{0927-6505}
+    \field{pages}{46\bibrangedash 53}
+    \field{title}{{A deep learning-based reconstruction of cosmic ray-induced
+  air showers}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0927650517302219
+    \endverb
+    \field{volume}{97}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Erdmann, Glombitza, Walz - 2018 - A deep learning-based reconstruct
+    \verb ion of cosmic ray-induced air showers.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astroparticle Physics}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Reference1}{article}{}
+  \entry{Erdmann2019}{article}{}
     \name{author}{3}{}{%
-      {{hash=HCJ}{%
-         family={Hawthorn},
-         familyi={H\bibinitperiod},
-         given={C.\bibnamedelima J.},
-         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      {{hash=EM}{%
+         family={Erdmann},
+         familyi={E\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
       }}%
-      {{hash=WKP}{%
-         family={Weber},
-         familyi={W\bibinitperiod},
-         given={K.\bibnamedelima P.},
-         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+      {{hash=GJ}{%
+         family={Glombitza},
+         familyi={G\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
       }}%
-      {{hash=SRE}{%
-         family={Scholten},
-         familyi={S\bibinitperiod},
-         given={R.\bibnamedelima E.},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      {{hash=QT}{%
+         family={Quast},
+         familyi={Q\bibinitperiod},
+         given={Thorben},
+         giveni={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{HCJWKPSRE1}
-    \strng{fullhash}{HCJWKPSRE1}
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \keyw{Particle and Nuclear Physics}
+    \strng{namehash}{EMGJQT1}
+    \strng{fullhash}{EMGJQT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2001}
-    \field{labeldatesource}{}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
     \field{abstract}{%
-    We have developed an enhanced Littrow configuration extended cavity diode
-  laser (ECDL) that can be tuned without changing the direction of the output
-  beam. The output of a conventional Littrow ECDL is reflected from a plane
-  mirror fixed parallel to the tuning diffraction grating. Using a free-space
-  Michelson wavemeter to measure the laser wavelength, we can tune the laser
-  over a range greater than 10 nm without any alteration of alignment.%
+    Simulations of particle showers in calorimeters are computationally
+  time-consuming, as they have to reproduce both energy depositions and their
+  considerable fluctuations. A new approach to ultra-fast simulations is
+  generative models where all calorimeter energy depositions are generated
+  simultaneously. We use GEANT4 simulations of an electron beam impinging on a
+  multi-layer electromagnetic calorimeter for adversarial training of a
+  generator network and a critic network guided by the Wasserstein distance.
+  The generator is constrained during the training such that the generated
+  showers show the expected dependency on the initial energy and the impact
+  position. It produces realistic calorimeter energy depositions, fluctuations
+  and correlations which we demonstrate in distributions of typical calorimeter
+  observables. In most aspects, we observe that generated calorimeter showers
+  reach the level of showers as simulated with the GEANT4 program.%
     }
-    \field{number}{12}
-    \field{pages}{4477\bibrangedash 4479}
-    \field{title}{Littrow Configuration Tunable External Cavity Diode Laser
-  with Fixed Direction Output Beam}
-    \verb{url}
-    \verb http://link.aip.org/link/?RSI/72/4477/1
+    \verb{doi}
+    \verb 10.1007/S41781-018-0019-7
     \endverb
-    \field{volume}{72}
-    \field{journaltitle}{Review of Scientific Instruments}
-    \field{month}{12}
-    \field{year}{2001}
+    \field{issn}{2510-2044}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{{Precise Simulation of Electromagnetic Calorimeter Showers
+  Using a Wasserstein Generative Adversarial Network}}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1007/s41781-018-0019-7
+    \endverb
+    \field{volume}{3}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Erdmann, Glombitza, Quast - 2019 - Precise Simulation of Electromag
+    \verb netic Calorimeter Showers Using a Wasserstein Generative Adversarial.
+    \verb pdf:pdf
+    \endverb
+    \field{journaltitle}{Computing and Software for Big Science 2019 3:1}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Reference2}{article}{}
-    \name{author}{2}{}{%
-      {{hash=WCE}{%
-         family={Wieman},
-         familyi={W\bibinitperiod},
-         given={Carl\bibnamedelima E.},
-         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+  \entry{Erdmann2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=EM}{%
+         family={Erdmann},
+         familyi={E\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
       }}%
-      {{hash=HL}{%
-         family={Hollberg},
-         familyi={H\bibinitperiod},
-         given={Leo},
+      {{hash=GL}{%
+         family={Geiger},
+         familyi={G\bibinitperiod},
+         given={Lukas},
          giveni={L\bibinitperiod},
       }}%
+      {{hash=GJ}{%
+         family={Glombitza},
+         familyi={G\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Schmidt},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
     }
-    \keyw{Diode Laser}
-    \strng{namehash}{WCEHL1}
-    \strng{fullhash}{WCEHL1}
+    \list{publisher}{1}{%
+      {Springer Nature}%
+    }
+    \keyw{Adversarial networks,Deep learning,Detector,Simulation,Wasserstein
+  distance}
+    \strng{namehash}{EM+1}
+    \strng{fullhash}{EMGLGJSD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1991}
-    \field{labeldatesource}{}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
     \field{abstract}{%
-    We present a review of the use of diode lasers in atomic physics with an
-  extensive list of references. We discuss the relevant characteristics of
-  diode lasers and explain how to purchase and use them. We also review the
-  various techniques that have been used to control and narrow the spectral
-  outputs of diode lasers. Finally we present a number of examples illustrating
-  the use of diode lasers in atomic physics experiments. Review of Scientific
-  Instruments is copyrighted by The American Institute of Physics.%
+    We use adversarial network architectures together with the Wasserstein
+  distance to generate or refine simulated detector data. The data reflect
+  two-dimensional projections of spatially distributed signal patterns with a
+  broad spectrum of applications. As an example, we use an observatory to
+  detect cosmic ray-induced air showers with a ground-based array of particle
+  detectors. First we investigate a method of generating detector patterns with
+  variable signal strengths while constraining the primary particle energy. We
+  then present a technique to refine simulated time traces of detectors to
+  match corresponding data distributions. With this method we demonstrate that
+  training a deep network with refined data-like signal traces leads to a more
+  precise energy reconstruction of data events compared to training with the
+  originally simulated traces.%
     }
-    \field{number}{1}
-    \field{pages}{1\bibrangedash 20}
-    \field{title}{Using Diode Lasers for Atomic Physics}
-    \verb{url}
-    \verb http://link.aip.org/link/?RSI/62/1/1
+    \verb{eprint}
+    \verb 1802.03325
     \endverb
-    \field{volume}{62}
-    \field{journaltitle}{Review of Scientific Instruments}
-    \field{month}{01}
-    \field{year}{1991}
+    \field{number}{1}
+    \field{title}{{Generating and refining particle detector simulations using
+  the Wasserstein distance in adversarial networks}}
+    \verb{url}
+    \verb https://arxiv.org/abs/1802.03325v1
+    \endverb
+    \field{volume}{2}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Erdmann et al. - 2018 - Generating and refining particle detector s
+    \verb imulations using the Wasserstein distance in adversarial networks.pdf
+    \verb :pdf
+    \endverb
+    \field{journaltitle}{Computing and Software for Big Science}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Glombitza2020}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Glombitza},
+         familyi={G\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sissa Medialab Srl}%
+    }
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The surface detector array of the Pierre Auger Observatory measures the
+  footprint of air showers induced by ultra-high energy cosmic rays. The
+  reconstruction of event-by-event information sensitive to the cosmic-ray
+  mass, is a challenging task and so far mainly based on fluorescence detector
+  observations with their duty cycle of $\approx 15 \%$.Recently, great
+  progress has been made in multiple fields of machine learning using deep
+  neural networks and associated techniques. Applying these new techniques to
+  air-shower physics opens up possibilities for improved reconstruction,
+  including an estimation of the cosmic-ray composition. In this contribution,
+  we show that deep convolutional neural networks can be used for air-shower
+  reconstruction, using surface-detector data. The focus of the
+  machine-learning algorithm is to reconstruct depths of shower maximum. In
+  contrast to traditional reconstruction methods, the algorithm learns to
+  extract the essential information from the signal and arrival-time
+  distributions of the secondary particles. We present the neural-network
+  architecture, describe the training, and assess the performance using
+  simulated air showers.%
+    }
+    \verb{doi}
+    \verb 10.22323/1.358.0270
+    \endverb
+    \field{pages}{270}
+    \field{title}{{Air-Shower Reconstruction at the Pierre Auger Observatory
+  based on Deep Learning}}
+    \verb{url}
+    \verb http://www.auger.org/archive/authors_icrc_2019.html https://inspirehe
+    \verb p.net/literature/1819455
+    \endverb
+    \field{volume}{ICRC2019}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Glombitza - 2020 - Air-Shower Reconstruction at the Pierre Auger Ob
+    \verb servatory based on Deep Learning.pdf:pdf
+    \endverb
+    \field{journaltitle}{PoS}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Paganini2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PM}{%
+         family={Paganini},
+         familyi={P\bibinitperiod},
+         given={Michela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=dOL}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Oliveira},
+         familyi={O\bibinitperiod},
+         given={Luke},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=NB}{%
+         family={Nachman},
+         familyi={N\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{PMOLdNB1}
+    \strng{fullhash}{PMOLdNB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Physicists at the Large Hadron Collider (LHC) rely on detailed simulations
+  of particle collisions to build expectations of what experimental data may
+  look like under different theory modeling assumptions. Petabytes of simulated
+  data are needed to develop analysis techniques, though they are expensive to
+  generate using existing algorithms and computing resources. The modeling of
+  detectors and the precise description of particle cascades as they interact
+  with the material in the calorimeter are the most computationally demanding
+  steps in the simulation pipeline. We therefore introduce a deep neural
+  network-based generative model to enable high-fidelity, fast, electromagnetic
+  calorimeter simulation. There are still challenges for achieving precision
+  across the entire phase space, but our current solution can reproduce a
+  variety of particle shower properties while achieving speed-up factors of up
+  to 100,000$\times$. This opens the door to a new era of fast simulation that
+  could save significant computing time and disk space, while extending the
+  reach of physics searches and precision measurements at the LHC and beyond.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.120.042003
+    \endverb
+    \verb{eprint}
+    \verb 1705.02355v2
+    \endverb
+    \field{number}{4}
+    \field{title}{{Accelerating Science with Generative Adversarial Networks:
+  An Application to 3D Particle Showers in Multi-Layer Calorimeters}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1705.02355 http://dx.doi.org/10.1103/PhysRevLett
+    \verb .120.042003
+    \endverb
+    \field{volume}{120}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Paganini, de Oliveira, Nachman - 2017 - Accelerating Science with G
+    \verb enerative Adversarial Networks An Application to 3D Particle Showe(2)
+    \verb .pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review Letters}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Paganini2017b}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PM}{%
+         family={Paganini},
+         familyi={P\bibinitperiod},
+         given={Michela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=dOL}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Oliveira},
+         familyi={O\bibinitperiod},
+         given={Luke},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=NB}{%
+         family={Nachman},
+         familyi={N\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{PMOLdNB1}
+    \strng{fullhash}{PMOLdNB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    The precise modeling of subatomic particle interactions and propagation
+  through matter is paramount for the advancement of nuclear and particle
+  physics searches and precision measurements. The most computationally
+  expensive step in the simulation pipeline of a typical experiment at the
+  Large Hadron Collider (LHC) is the detailed modeling of the full complexity
+  of physics processes that govern the motion and evolution of particle showers
+  inside calorimeters. We introduce \textsc{CaloGAN}, a new fast simulation
+  technique based on generative adversarial networks (GANs). We apply these
+  neural networks to the modeling of electromagnetic showers in a
+  longitudinally segmented calorimeter, and achieve speedup factors comparable
+  to or better than existing full simulation techniques on CPU
+  ($100\times$-$1000\times$) and even faster on GPU (up to $\sim10^5\times$).
+  There are still challenges for achieving precision across the entire phase
+  space, but our solution can reproduce a variety of geometric shower shape
+  properties of photons, positrons and charged pions. This represents a
+  significant stepping stone toward a full neural network-based detector
+  simulation that could save significant computing time and enable many
+  analyses now and in the future.%
+    }
+    \verb{doi}
+    \verb 10.1103/physrevd.97.014021
+    \endverb
+    \verb{eprint}
+    \verb 1712.10321
+    \endverb
+    \field{number}{1}
+    \field{title}{{CaloGAN: Simulating 3D High Energy Particle Showers in
+  Multi-Layer Electromagnetic Calorimeters with Generative Adversarial
+  Networks}}
+    \verb{url}
+    \verb https://arxiv.org/abs/1712.10321v1
+    \endverb
+    \field{volume}{97}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Paganini, de Oliveira, Nachman - 2017 - CaloGAN Simulating 3D High
+    \verb Energy Particle Showers in Multi-Layer Electromagnetic Calorimeters w
+    \verb .pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review D}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput

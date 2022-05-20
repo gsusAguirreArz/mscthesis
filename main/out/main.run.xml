@@ -57,8 +57,8 @@
       <file>biblatex.def</file>
       <file>blx-natbib.def</file>
       <file>standard.bbx</file>
-      <file>authoryear.bbx</file>
-      <file>authoryear.cbx</file>
+      <file>numeric.bbx</file>
+      <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
       <file>spanish.lbx</file>
     </requires>
@@ -84,7 +84,7 @@
       <file>main-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>example.bib</file>
+      <file>library.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

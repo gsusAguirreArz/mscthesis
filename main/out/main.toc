@@ -4,66 +4,38 @@
 \contentsline {chapter}{Resumen}{\es@scroman {vii}}{section*.2}%
 \contentsline {chapter}{Agradecimientos}{\es@scroman {ix}}{section*.3}%
 \contentsline {chapter}{\numberline {1}Introduccion}{1}{chapter.14}%
-\contentsline {section}{\numberline {1.1}Introduccion}{1}{section.15}%
-\contentsline {section}{\numberline {1.2}Plantamiento del problema}{2}{section.16}%
+\contentsline {section}{\numberline {1.1}Introducción}{1}{section.15}%
+\contentsline {section}{\numberline {1.2}Planteamiento del problema}{2}{section.16}%
 \contentsline {section}{\numberline {1.3}Objetivo de la tesis}{2}{section.17}%
-\contentsline {section}{\numberline {1.4}Delimitacion del tema}{2}{section.21}%
-\contentsline {section}{\numberline {1.5}Contribucion de la tesis}{2}{section.22}%
-\contentsline {section}{\numberline {1.6}Organizacion de la tesis}{2}{section.23}%
-\contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.24}%
-\contentsline {section}{\numberline {2.1}Antecedentes}{3}{section.25}%
-\contentsline {section}{\numberline {2.2}Cascadas Atmosféricas}{4}{section.26}%
-\contentsline {subsection}{\numberline {2.2.1}Propiedades de las cascadas atmosféricas}{5}{subsection.29}%
-\contentsline {subsection}{\numberline {2.2.2}Métodos de detección}{5}{subsection.30}%
-\contentsline {section}{\numberline {2.3}Análisis de las cascadas atmosféricas}{6}{section.32}%
-\contentsline {section}{\numberline {2.4}Simulaciones}{7}{section.34}%
-\contentsline {subsection}{\numberline {2.4.1}Estrategia para simulaciones de EAS}{8}{subsection.35}%
-\contentsline {subsection}{\numberline {2.4.2}Problemática de las simulaciones}{8}{subsection.37}%
-\contentsline {section}{\numberline {2.5}Modelos generativos}{9}{section.38}%
-\contentsline {subsection}{\numberline {2.5.1}Aplicación de modelos generativos}{9}{subsection.39}%
-\contentsline {chapter}{\numberline {3}Modelos generativos}{11}{chapter.40}%
-\contentsline {section}{\numberline {3.1}Introduccion}{11}{section.41}%
-\contentsline {subsection}{\numberline {3.1.1}Fundamento teorico}{11}{subsection.42}%
-\contentsline {section}{\numberline {3.2}Lineas de investigacion}{11}{section.43}%
-\contentsline {section}{\numberline {3.3}Tecnicas usadas}{11}{section.44}%
-\contentsline {chapter}{\numberline {4}Metodo experimental}{13}{chapter.45}%
-\contentsline {section}{\numberline {4.1}Preprocesamiento de datos}{13}{section.46}%
-\contentsline {section}{\numberline {4.2}Algoritmos}{13}{section.47}%
-\contentsline {subsection}{\numberline {4.2.1}Subsection 1}{13}{subsection.48}%
-\contentsline {subsection}{\numberline {4.2.2}Subsection 2}{13}{subsection.49}%
-\contentsline {section}{\numberline {4.3}Desarrollo del metodo}{14}{section.50}%
-\contentsline {section}{\numberline {4.4}Mapa del metodo experimental}{14}{section.51}%
-\contentsline {chapter}{\numberline {5}Resultados}{15}{chapter.52}%
-\contentsline {section}{\numberline {5.1}Dsicusion de resultados obtenidos}{15}{section.53}%
-\contentsline {chapter}{\numberline {6}Conlusiones}{17}{chapter.54}%
-\contentsline {section}{\numberline {6.1}Contribuciones y conclusiones, puntuales, obtenidas}{17}{section.55}%
-\contentsline {section}{\numberline {6.2}Publicaciones}{17}{section.56}%
-\contentsline {section}{\numberline {6.3}Aplicacion y extension generadas del trabajo}{17}{section.57}%
-\contentsline {section}{\numberline {6.4}Trabajos futuros}{17}{section.58}%
-\contentsline {chapter}{\numberline {7}LaTex Review}{19}{chapter.59}%
-\contentsline {section}{\numberline {7.1}Welcome and Thank You}{19}{section.60}%
-\contentsline {section}{\numberline {7.2}Learning \LaTeX {}}{19}{section.61}%
-\contentsline {subsection}{\numberline {7.2.1}A (not so short) Introduction to \LaTeX {}}{21}{subsection.167}%
-\contentsline {subsection}{\numberline {7.2.2}A Short Math Guide for \LaTeX {}}{21}{subsection.168}%
-\contentsline {subsection}{\numberline {7.2.3}Common \LaTeX {} Math Symbols}{21}{subsection.169}%
-\contentsline {subsection}{\numberline {7.2.4}\LaTeX {} on a Mac}{22}{subsection.170}%
-\contentsline {section}{\numberline {7.3}Getting Started with this Template}{22}{section.171}%
-\contentsline {subsection}{\numberline {7.3.1}About this Template}{22}{subsection.172}%
-\contentsline {section}{\numberline {7.4}What this Template Includes}{22}{section.173}%
-\contentsline {subsection}{\numberline {7.4.1}Folders}{22}{subsection.174}%
-\contentsline {subsection}{\numberline {7.4.2}Files}{23}{subsection.175}%
-\contentsline {section}{\numberline {7.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{24}{section.176}%
-\contentsline {section}{\numberline {7.6}The \texttt {main.tex} File Explained}{24}{section.177}%
-\contentsline {section}{\numberline {7.7}Thesis Features and Conventions}{25}{section.178}%
-\contentsline {subsection}{\numberline {7.7.1}Printing Format}{25}{subsection.179}%
-\contentsline {subsection}{\numberline {7.7.2}Using US Letter Paper}{26}{subsection.180}%
-\contentsline {subsection}{\numberline {7.7.3}References}{26}{subsection.181}%
-\contentsline {subsubsection}{A Note on bibtex}{26}{section*.183}%
-\contentsline {subsection}{\numberline {7.7.4}Tables}{27}{subsection.184}%
-\contentsline {subsection}{\numberline {7.7.5}Figures}{27}{subsection.186}%
-\contentsline {subsection}{\numberline {7.7.6}Typesetting mathematics}{28}{subsection.188}%
-\contentsline {section}{\numberline {7.8}Sectioning and Subsectioning}{29}{section.190}%
-\contentsline {section}{\numberline {7.9}In Closing}{29}{section.191}%
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{31}{appendix.192}%
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{31}{section.193}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{33}{appendix*.194}%
+\contentsline {section}{\numberline {1.4}Delimitación del tema}{2}{section.21}%
+\contentsline {section}{\numberline {1.5}Organización de la tesis}{3}{section.22}%
+\contentsline {chapter}{\numberline {2}Estado del arte}{5}{chapter.23}%
+\contentsline {section}{\numberline {2.1}Antecedentes}{5}{section.24}%
+\contentsline {section}{\numberline {2.2}Cascadas Atmosféricas}{6}{section.25}%
+\contentsline {subsection}{\numberline {2.2.1}Propiedades de las cascadas atmosféricas}{7}{subsection.28}%
+\contentsline {subsection}{\numberline {2.2.2}Métodos de detección}{7}{subsection.29}%
+\contentsline {section}{\numberline {2.3}Análisis de las cascadas atmosféricas}{8}{section.31}%
+\contentsline {section}{\numberline {2.4}Simulaciones}{9}{section.33}%
+\contentsline {subsection}{\numberline {2.4.1}Estrategia para simulaciones de EAS}{10}{subsection.34}%
+\contentsline {subsection}{\numberline {2.4.2}Problemática de las simulaciones}{10}{subsection.36}%
+\contentsline {section}{\numberline {2.5}Modelos generativos}{11}{section.37}%
+\contentsline {subsection}{\numberline {2.5.1}Aplicación de modelos generativos}{11}{subsection.38}%
+\contentsline {chapter}{\numberline {3}Modelos generativos}{13}{chapter.39}%
+\contentsline {section}{\numberline {3.1}Introducción}{13}{section.40}%
+\contentsline {subsection}{\numberline {3.1.1}Fundamento teórico}{13}{subsection.41}%
+\contentsline {section}{\numberline {3.2}Líneas de investigación}{14}{section.42}%
+\contentsline {section}{\numberline {3.3}Modelos generativos}{14}{section.43}%
+\contentsline {subsection}{\numberline {3.3.1}Conceptos básicos}{15}{subsection.44}%
+\contentsline {chapter}{\numberline {4}Metodo experimental}{17}{chapter.45}%
+\contentsline {section}{\numberline {4.1}Recolección y manejo de datos}{17}{section.46}%
+\contentsline {section}{\numberline {4.2}Desarrollo del método}{17}{section.47}%
+\contentsline {subsection}{\numberline {4.2.1}Mapa del método experimental}{18}{subsection.48}%
+\contentsline {chapter}{\numberline {5}Resultados}{19}{chapter.49}%
+\contentsline {section}{\numberline {5.1}Dsicusion de resultados obtenidos}{19}{section.50}%
+\contentsline {chapter}{\numberline {6}Conlusiones}{21}{chapter.51}%
+\contentsline {section}{\numberline {6.1}Conclusiones puntuales obtenidas}{21}{section.52}%
+\contentsline {section}{\numberline {6.2}Aplicacion y extension generadas del trabajo}{21}{section.53}%
+\contentsline {section}{\numberline {6.3}Trabajos futuros}{21}{section.54}%
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{23}{appendix.55}%
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{23}{section.56}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{25}{appendix*.57}%
