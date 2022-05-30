@@ -10,21 +10,17 @@ así como una breve perspectiva de la problemática general. Como capítulo intr
 En el área de la física de altas energías (HEP) las técnicas de aprendizaje máquina siempre han estado presentes. Debido a la sorprendente efectividad de técnicas modernas del aprendizaje profundo, se comenzó a adaptar y desarrollar estos métodos en todos los rubros del campo. Algunas de las aplicaciones van desde los enfoques que se tienen en la parte experimental, la fenomenología o en el análisis teórico de los eventos.
 
 En los experimentos más importantes del campo, el tratamiento y análisis de datos es una tarea fundamental. Técnicas como, árboles de decisión, máquinas de soporte vectorial, algoritmos genéticos, entre otras, fallan cuando la dimensionalidad de los datos aumenta.
-Como referencia de la alta dimensionalidad, en el gran colisionador de hadrones (LHC), las colisiones ocurren con una frecuencia de aproximadamente 40Mhz, además de que cada colisión genera un gran número de partículas y en particular el LHC tiene alrededor $O(10^8)$ sensores para su detección.
+Como referencia de la alta dimensionalidad que hay, en el gran colisionador de hadrones (LHC), las colisiones ocurren con una frecuencia aproximada de 40Mhz, además cada colisión genera un gran número de partículas. Por ejemplo, en el caso particular del LHC, se tiene alrededor de $O(10^8)$ sensores para la detección de partículas.
 
-Debido a que las observaciones son fundamentalmente probabilísticas se tiene un modelo
-estadístico que describe la probabilidad de observar un evento dado los parámetros de una teoría. Pero la alta dimensionalidad, junto con los grandes volúmenes de datos generan un problema, ya que el modelo de los datos experimentales no se conoce explícitamente. Sin embargo, si se tiene acceso a muestras de datos generados por simuladores estocásticos que modelan la física de las interacciones. 
+Debido a que las observaciones son fundamentalmente probabilísticas se tiene un modelo estadístico que describe la probabilidad de observar un evento dado los parámetros de una teoría. Dado que el modelo de los datos experimentales no se conoce explícitamente, la alta dimensionalidad y a los grandes volúmenes de datos generan un problema. Sin embargo, se tiene acceso a muestras de datos generados por simuladores estocásticos que modelan la física de las interacciones. 
 
-Herramientas como PYTHIA, HERWING, GEANT, CORSIKA, se les suele denominar como simuladores de Monte Carlo, los cuales cumplen  con dos necesidades. La primera es aproximar el modelo estadístico al mostrar de un espacio enorme de procesos no observados o latentes y la segunda es generar una base de datos.
+Herramientas como PYTHIA, HERWING, GEANT, CORSIKA, se les denomina como simuladores Monte Carlo, los cuales cumplen  con dos necesidades básicas. La primera, es aproximar el modelo estadístico que genera cada evento, la segunda, es generar una base de datos de simulaciones realistas.
 
-Entre las tareas de bajo nivel se tiene la identificación de partículas y la reconstrucción de la energía/momento de la partícula. Debido a que los simuladores completos que describen las interacciones de las partículas con la materia, son computacionalmente pesados y se llevan gran parte del presupuesto computacional de las colaboraciones, los simuladores rápidos son esenciales.
+Debido a que los simuladores describen las interacciones de las partículas con la materia, son computacionalmente demandantes y se llevan gran parte del presupuesto computacional de las colaboraciones experimentales \parencite{Elmer2017}, de modo que el desarrollo de simuladores rápidos es esencial.
 
-Simuladores como GEANT y CORSIKA que generan una excelente descripción de interacciones hadrónicas son lentos para eventos de altas energías.
-En los últimos años ha nacido un gran interés por usar modelos generativos para aumentar la velocidad de las simulaciones y tal vez llegar a usar estos métodos directamente en datos generados por colisiones reales y hacer ajustes en el momento.
+Simuladores como GEANT y CORSIKA generan una excelente descripción de interacciones hadrónicas, sin embargo, son lentos para simular eventos de altas energías. De ahí la razón por la cual en los últimos años ha surgido un gran interés por usar modelos generativos para acelerar simuladores y tal vez llegar a usar estos métodos directamente en datos generados por colisiones reales y hacer ajustes al momento.
 
-El presente trabajo está fundamentado en el desarrollo de algoritmos de aprendizaje máquina profundo, específicamente el uso de modelos implícitos como arquitecturas adversarias (GAN) para la generación de cascadas atmosféricas. Esto debido a la necesidad de generar simulaciones precisas de una manera más rápida, ya que actualizaciones a dichos experimentos como el de alta luminosidad del LHC (HL-LHC), exigirán una mayor capacidad computacional que no se tiene con la proyección de presupuestos actuales.
-
-Existe un gran interés por parte de la comunidad en usar métodos de aprendizaje no supervisado como GANs o VAEs para generar espacios de características con una alta dimensionalidad. Uno de los mayores desafíos que hay al usar estos métodos, es el de cómo cuantificar su desempeño.
+El presente trabajo está fundamentado en el desarrollo de algoritmos de aprendizaje máquina profundo, específicamente el uso de modelos generativos implícitos como arquitecturas adversarias (GAN) para la generación de cascadas atmosféricas, debido a la necesidad de generar simulaciones precisas de una manera más rápida, a consecuencia de futuros requerimentos computacionales en las colaboraciones experimentales, por ejemplo, la actualización de alta luminosidad del LHC (HL-LHC)\parencite{Elmer2017}.
 
 \section{Planteamiento del problema}
 
@@ -44,24 +40,26 @@ Objetivos particulares:
 \begin{enumerate}
    \item Obtener datos de simulaciones acordes a cascadas atmosféricas.
    \item Diseñar y entrenar una red generativa adversaria para la simulación de cascadas atmosféricas.
-   \item Comparar el tiempo de simulación de la red contra el tiempo que les toma a simuladores tradicionales.
+   \item Ajustar la dimensión del vector latente del modelo y comparar resultados.
+   \item Obtener vectores latentes pŕomedio y registrar como afecta a la cascada saliente.
+   \item Cambiar de modelo o arquitectura y repetir.
 \end{enumerate}
 
 \section{Delimitación del tema}
 
-El presente trabajo se limita a utilizar al menos dos arquitecturas generativas en forma funcional para lograr la generación de respuestas de detectores a una cascada atmosférica extensa. Enfatizando la rapidez de generación de nuevas muestras. 
+El presente trabajo se limita a utilizar al menos dos arquitecturas generativas en forma funcional para así lograr generar respuestas de detectores a una cascada atmosférica extensa. Enfatizando la rapidez de generación de nuevas muestras.
 
-Este trabajo se enfoca en la parte electromagnética de una cascada atmosférica pero no se limita para el análisis de otro tipo de cascadas de partículas o en su defecto, simulaciones de otro tipo de fenómenos físicos que involucran una multitud de procesos probabilísticos. Aunque no se puede asegurar que sea el mejor método para la aceleración de simulaciones, los próximos estudios deben de intentar desenredar los parámetros latentes y probar la efectividad de otro tipo de arquitecturas. 
+Cabe destacar que el trabajo se enfoca en la parte electromagnética de una cascada atmosférica, pero no se limita al análisis de otro tipo de cascadas de partículas o en su defecto, simulaciones de otro tipo de fenómenos físicos que involucran una multitud de procesos probabilísticos. Aunque no se pueda asegurar que el método presentado sea el mejor para la acelerar simulaciones, próximos estudios deben de intentar desenredar los parámetros latentes y probar la efectividad de otro tipo de arquitecturas. 
 
-En este trabajo sólo se utilizarán arquitecturas adversarias (GAN) para acelerar las simulaciones. 
+Es necesario subrayar que este trabajo sólo utilizará arquitecturas adversarias (GAN) para acelerar simulaciones. 
 
 \section{Organización de la tesis}
 
 El \textbf{Capítulo \ref{Chapter1}} presenta una breve y concisa introducción a la problemática principal, el planteamiento del problema, el objetivo principal y objetivos particulares del trabajo. % hacer referencia a pagina \pageref
 
-El \textbf{Capítulo \ref{Chapter2}} muestra el estado del arte, así como una breve explicación fenomenológica de las cascadas atmosféricas y la correspondiente operación básica de simuladores modernos. También se introducen las problemáticas principales relacionadas con los simuladores.
+El \textbf{Capítulo \ref{Chapter2}} muestra el estado del arte, así como una breve explicación fenomenológica de las cascadas atmosféricas y la correspondiente operación básica de simuladores modernos. También se introducen las problemáticas principales relacionadas a los simuladores Monte Carlo.
 
-En el \textbf{Capítulo \ref{Chapter3}} se introduce el fundamento teórico de los modelos generativos así como conceptos fundamentales del aprendizaje no supervisado. Se hace especial énfasis en las arquitecturas generativas y la teoría que las respalda.
+En el \textbf{Capítulo \ref{Chapter3}} se introduce el fundamento teórico de los modelos generativos así como conceptos fundamentales del aprendizaje no supervisado. Asimismo se hace especial énfasis en las arquitecturas generativas y la teoría que las respalda.
 
 El \textbf{Capítulo \ref{Chapter4}} presenta la metodología experimental que este trabajo sigue para lograr los objetivos propuestos. 
 

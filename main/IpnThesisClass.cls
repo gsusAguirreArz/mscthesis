@@ -50,6 +50,10 @@
 \RequirePackage{etoolbox}
 \RequirePackage{xparse}
 \RequirePackage{listings}
+\RequirePackage{algorithm}
+\RequirePackage{algpseudocode}
+\RequirePackage{amsmath}
+\RequirePackage{enumitem}
 
 \newbool{nolistspace}
 \newbool{chapteroneline}
@@ -253,6 +257,29 @@
 	\addcontentsline{toc}{chapter}{#1}%
 }
 
+\newcommand{\boxaround}[1]{
+	\noindent\fbox{
+		\begin{minipage}
+			{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+			% \centering
+			#1
+		\end{minipage}
+	}
+}
+
+\newcommand{\addFigure}[4]{
+	% #1 figure path
+	% #2 reference name
+	% #3 index name appearance
+	% #4 caption content
+	\begin{figure}
+		\centering
+		\includegraphics[width=50mm,scale=0.5]{#1}
+		\decoRule
+		\caption[#3]{#4}
+		\label{fig:#2}
+	\end{figure}
+}
 %----------------------------------------------------------------------------------------
 %	COLOURS
 %----------------------------------------------------------------------------------------

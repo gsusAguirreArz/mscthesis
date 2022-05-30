@@ -1,6 +1,6 @@
 % Chapter Template
 
-\chapter{Metodo experimental} % Main chapter title
+\chapter{Método experimental} % Main chapter title
 
 \label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
@@ -27,6 +27,31 @@ Para datos como los tiempos de arribo, el dominio de cada simulación diferirá 
 
 Separación en conjuntos de entrenamiento, validación y evaluación. 
 Una vez que se cumpla lo anterior, los datos estarán listos para poder entrenar al modelo.
+
+\section{Algoritmos}
+
+\begin{algorithm}
+    \caption{Algoritmo de entrenamiento de la GAN}\label{alg:cap}
+    \begin{algorithmic}
+    \Require $k \geq 1$
+    % \Require $y = x^n$
+    \For {$N$ iteraciones}
+        
+    \EndFor
+    \State $y \gets 1$
+    \State $X \gets x$
+    \State $N \gets n$
+    \While{$N \neq 0$}
+    \If{$N$ is even}
+        \State $X \gets X \times X$
+        \State $N \gets \frac{N}{2}$  \Comment{This is a comment}
+    \ElsIf{$N$ is odd}
+        \State $y \gets y \times X$
+        \State $N \gets N - 1$
+    \EndIf
+    \EndWhile
+    \end{algorithmic}
+\end{algorithm}
 
 \section{Desarrollo del método}
 

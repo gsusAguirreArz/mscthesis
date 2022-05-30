@@ -203,6 +203,133 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Elmer2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EP}{%
+         family={Elmer},
+         familyi={E\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Neubauer},
+         familyi={N\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SMD}{%
+         family={Sokoloff},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EPNMSMD1}
+    \strng{fullhash}{EPNMSMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    The quest to understand the fundamental building blocks of nature and their
+  interactions is one of the oldest and most ambitious of human scientific
+  endeavors. Facilities such as CERN's Large Hadron Collider (LHC) represent a
+  huge step forward in this quest. The discovery of the Higgs boson, the
+  observation of exceedingly rare decays of B mesons, and stringent constraints
+  on many viable theories of physics beyond the Standard Model (SM) demonstrate
+  the great scientific value of the LHC physics program. The next phase of this
+  global scientific project will be the High-Luminosity LHC (HL-LHC) which will
+  collect data starting circa 2026 and continue into the 2030's. The primary
+  science goal is to search for physics beyond the SM and, should it be
+  discovered, to study its details and implications. During the HL-LHC era, the
+  ATLAS and CMS experiments will record circa 10 times as much data from 100
+  times as many collisions as in LHC Run 1. The NSF and the DOE are planning
+  large investments in detector upgrades so the HL-LHC can operate in this
+  high-rate environment. A commensurate investment in R&D for the software for
+  acquiring, managing, processing and analyzing HL-LHC data will be critical to
+  maximize the return-on-investment in the upgraded accelerator and detectors.
+  The strategic plan presented in this report is the result of a
+  conceptualization process carried out to explore how a potential Scientific
+  Software Innovation Institute (S2I2) for High Energy Physics (HEP) can play a
+  key role in meeting HL-LHC challenges.%
+    }
+    \verb{eprint}
+    \verb 1712.06592
+    \endverb
+    \field{title}{{Strategic Plan for a Scientific Software Innovation
+  Institute (S2I2) for High Energy Physics}}
+    \verb{url}
+    \verb https://arxiv.org/abs/1712.06592v2
+    \endverb
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Elmer, Neubauer, Sokoloff - 2017 - Strategic Plan for a Scientific
+    \verb Software Innovation Institute (S2I2) for High Energy Physics.pdf:pdf
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Engel2011}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ER}{%
+         family={Engel},
+         familyi={E\bibinitperiod},
+         given={Ralph},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Heck},
+         familyi={H\bibinitperiod},
+         given={Dieter},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pierog},
+         familyi={P\bibinitperiod},
+         given={Tanguy},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \keyw{Heitler model,collider data,cosmic rays,high-energy interaction
+  models,multiparticle production}
+    \strng{namehash}{ERHDPT1}
+    \strng{fullhash}{ERHDPT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    At energies greater than 1015 eV, cosmic-ray particles can be measured only
+  indirectly by detecting the extensive showers of secondary particles they
+  create in the Earth's atmosphere. A detailed si...%
+    }
+    \verb{doi}
+    \verb 10.1146/ANNUREV.NUCL.012809.104544
+    \endverb
+    \field{issn}{01638998}
+    \field{pages}{467\bibrangedash 489}
+    \field{title}{{Extensive Air Showers and Hadronic Interactions at High
+  Energy}}
+    \verb{url}
+    \verb https://www.annualreviews.org/doi/abs/10.1146/annurev.nucl.012809.104
+    \verb 544
+    \endverb
+    \field{volume}{61}
+    \verb{file}
+    \verb :home/gsus/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
+    \verb d/Engel, Heck, Pierog - 2011 - Extensive Air Showers and Hadronic Int
+    \verb eractions at High Energy.pdf:pdf
+    \endverb
+    \field{journaltitle}{http://dx.doi.org/10.1146/annurev.nucl.012809.104544}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Erdmann2018b}{article}{}
     \name{author}{3}{}{%
       {{hash=EM}{%
@@ -414,6 +541,30 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{FosterGM2019}{book}{}
+    \name{author}{1}{}{%
+      {{hash=FD}{%
+         family={Foster},
+         familyi={F\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {O'Reilly Media, Inc., 2019.}%
+    }
+    \strng{namehash}{FD1}
+    \strng{fullhash}{FD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{isbn}{9781492041948}
+    \field{subtitle}{Teaching machines to paint, write, compose, and play}
+    \field{title}{Generative deep learning}
+    \field{year}{2019}
+  \endentry
+
   \entry{Glombitza2020}{article}{}
     \name{author}{1}{}{%
       {{hash=GJ}{%
@@ -469,6 +620,34 @@
     \endverb
     \field{journaltitle}{PoS}
     \field{year}{2020}
+  \endentry
+
+  \entry{GriederEAS2010}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GPK}{%
+         family={Grieder},
+         familyi={G\bibinitperiod},
+         given={Peter\bibnamedelima K.F.},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin, Heidelberg}%
+    }
+    \strng{namehash}{GPK1}
+    \strng{fullhash}{GPK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb \url{https://doi.org/10.1007/978-3-540-76941-5}
+    \endverb
+    \field{isbn}{978-3-540-76941-5}
+    \field{subtitle}{High Energy Phenomena and Astrophysical Aspects - A
+  Tutorial Reference Manual and Data Book}
+    \field{title}{Extensive Air Showers}
+    \field{year}{2010}
   \endentry
 
   \entry{Paganini2017}{article}{}
@@ -622,6 +801,52 @@
     \field{eprinttype}{arXiv}
     \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Picozza2008}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=PP}{%
+         family={Picozza},
+         familyi={P\bibinitperiod},
+         given={Piergiorgio},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Malvezzi},
+         familyi={M\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PPMV1}
+    \strng{fullhash}{PPMV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Several experiments are currently in data analysis or in operation to
+  explore the cosmic rays energy region between few tens of MeV/n and few tens
+  of TeV/n. The main goals include the search for antimatter, dark matter
+  signals and exotic particles, the study of the mechanisms of production,
+  acceleration and transport of cosmic rays, the monitoring of the solar
+  modulation and its effects on the electrical charge-sign of particles and
+  nuclei. These experiments are providing very precise measurements of
+  antiproton, positron and electron fluxes and a direct measurement of the
+  chemical composition and energy spectra of cosmic-ray nuclei from proton to
+  Iron. In this paper a review of the current experiments and of the results
+  obtained will be presented, together with an overview of the future
+  programs.%
+    }
+    \field{title}{{Cosmic Rays under the Knee}}
+    \verb{url}
+    \verb https://www.researchgate.net/publication/265671393_Cosmic_Rays_under_
+    \verb the_Knee
+    \endverb
+    \field{year}{2008}
+    \field{urlday}{12}
+    \field{urlmonth}{05}
+    \field{urlyear}{2022}
   \endentry
 \enddatalist
 \endinput

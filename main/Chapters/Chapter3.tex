@@ -22,13 +22,13 @@ El campo de los modelos generativos es diverso y la definición de los problemas
 
 Como punto de partida se debe de reconocer la diferencia clave entre los modelos discriminativos y los modelos generativos. 
 
-Def.
+\boxaround{
+    Los modelos discriminativos estiman $p(y|x)$ - la probabilidad del observable y dada la observación $x$.\\
+        
+    Los modelos generativos estiman $p(x)$ - la probabilidad de observar $x$.
+}
 
-Los modelos discriminativos estiman p(y|x) - la probabilidad del observable y dada la observación x.
-
-Los modelos generativos estiman p(x) - la probabilidad de observar x.
-
-En otras palabras, los modelos discriminativos intentan estimar la probabilidad de que una observación x pertenezca a la categoría y, y los modelos generativos intentan estimar la probabilidad de ver la observación x. Por lo tanto el modelo debe de ser probabilístico en vez de ser determinista y debe incluir un elemento estocástico que influencia las observaciones individuales generadas por el modelo.
+En otras palabras, los modelos discriminativos intentan estimar la probabilidad de que una observación $x$ pertenezca a la categoría $y$, y los modelos generativos intentan estimar la probabilidad de ver la observación $x$. Por lo tanto el modelo debe de ser probabilístico en vez de ser determinista y debe incluir un elemento estocástico que influencia las observaciones individuales generadas por el modelo.
 
 \section{Líneas de investigación}
 
@@ -48,34 +48,194 @@ El trabajo del modelo es imitar una distribución desconocida lo más cercano po
 
 El marco de trabajo de los modelos generativos es el siguiente:
 
-1 Se tiene un conjunto de datos de observaciones $X$.
-
-2 Se asume que las observaciones $X$ se generaron de acuerdo a una distribución de probabilidad desconocida $p_{datos}$.
-
-3 Se diseña un modelo generativo $p_{modelo}$ que intenta imitar a $p_{datos}$.
-
-4 Se muestrea de $p_{modelo}$ para generar observaciones que parecen ser obtenidas de $p_{datos}$.
+\begin{itemize}
+	\item Se tiene un conjunto de datos de observaciones $X$.
+	\item Se asume que las observaciones $X$ se generaron de acuerdo a una distribución de probabilidad desconocida $p_{datos}$.
+ 	\item Se diseña un modelo generativo $p_{modelo}$ que intenta imitar a $p_{datos}$.
+	\item Se muestrea de $p_{modelo}$ para generar observaciones que parecen ser obtenidas de $p_{datos}$.
+\end{itemize}
 
 Consideramos que $p_{modelo}$ hace un buen trabajo si:
 
 Puede generar observaciones que parecen ser obtenidas de $p_{datos}$.
 
-Puede generar observaciones que son sustancialmente diferentes a las observadas en X. En otras palabras, el modelo no debería de reproducir cosas que ya conoce.
+Puede generar observaciones que son sustancialmente diferentes a las observadas en $X$. En otras palabras, el modelo no debería de reproducir cosas que ya conoce.
 
 \subsection{Conceptos básicos}
 
-Def:
+\boxaround{
+	Espacio Muestral
+	
+	El espacio muestral es el conjunto de todos los posibles valores que una observación x puede tomar.
+}
 
-Espacio Muestral
+\boxaround{
+	Función de densidad de probabilidad
+	
+	Una función de densidad de probabilidad, $p(x)$, es una función que mapea un punto x del espacio muestral a un número entre 0 y 1. La suma de la función de densidad sobre todos los puntos del espacio muestral es igual a 1 para que sea una distribución bien definida.
+	
+	Por definición tenemos que solo existe una $p_{datos}$ pero existen infinitas distribuciones $p_{modelo}$ que pueden estimar $p_{datos}$. Para encontrar una distribución adecuada se tiene que usar un modelo paramétrico.
+}
 
-El espacio muestral es el conjunto de todos los posibles valores que una observación x puede tomar.
+\boxaround{
+	Modelo paramétrico
+	
+	Un modelo paramétrico, $p_{\theta}(x)$, es una familia de funciones de densidad que pueden ser descritas por medio de un número finito de parámetros, $\theta$.
+}
 
-Función de densidad de probabilidad
+\boxaround{
+	Verosimilitud
+	
+	La verosimilitud $L(\theta | x)$ de un conjunto de parámetros $\theta$ es una función que mide la  plausibilidad de $\theta$, dado una observación $x$.
+	
+	Se define como sigue:
+	\[
+		L(\theta | x) = p_\theta (x)
+	\]
+	
+	Esto es, la verosimilitud de $\theta$ dada una observación $x$ está definida como el valor de la función de densidad de probabilidad parametrizada por $\theta$, en el punto $x$.
+	
+	Para un conjunto de observaciones se tiene:
+	\[
+		L(\theta | X) = \prod_{x \in X} p_\theta (x)
+	\]
+	
+	La expresión anterior resulta ser complicada de trabajar computacionalmente hablando, entonces se usa la verosimilitud logarítmica $l$.
+	
+	\[
+		l(\theta | x) = \sum_{x \in X} log p_\theta (x)
+	\]
+}
 
-Una función de densidad de probabilidad, $p(x)$, es una función que mapea un punto x del espacio muestral a un número entre 0 y 1. La suma de la función de densidad sobre todos los puntos del espacio muestral es igual a 1 para que sea una distribución bien definida.
+En otras palabras, la verosimilitud de un conjunto de parámetros $\theta$ es igual a la probabilidad de observar los datos bajo el modelo parametrizado por $\theta$.
 
-Por definición tenemos que solo existe una $p_{datos}$ pero existen infinitas distribuciones $p_{modelo}$ que pueden estimar $p_{datos}$. Para encontrar una distribución adecuada se tiene que usar un modelo paramétrico.
+\subsection{Modelos basados en la verosimilitud}
 
-Modelo paramétrico
+Dado un conjunto de observaciones finito $D$, muestreado de un distribución $p_{datos}$, el objetivo de un modelo generativo es aproximar $p_{datos}$ a través de una aproximación paramétrica $p_\theta$, de tal manera que, se puede pensar que el modelo aprende los parámetros que minimicen alguna suerte de distancia entre $p_{datos}$ y $p_\theta$ (). Matemáticamente se tiene el siguiente problema de optimización.
 
-Un modelo paramétrico, $p_{\theta}(x)$, es una familia de funciones de densidad que pueden ser descritas por medio de un número finito de parámetros, $\theta$.
+\addFigure{Figures/gms-jpg.jpg}{distanceModels}{Modelo}{Caption}
+
+\begin{equation}
+	\label{eq:dist}
+	\min_{\theta \in \mathcal{M} } d( p_{datos}, p_\theta )
+\end{equation}
+
+La verosimilitud es la primera métrica que se considera para medir la distancia entre el modelo y $p_{datos}$. A esta técnica se le conoce como estimación de la verosimilitud máxima (MLE).
+
+\boxaround{
+	MLE
+	
+	Esta técnica permite estimar el conjunto de parámetros $\hat{\theta}$ del modelo $p_\theta (x)$, los cuales son los más probables de explicar los datos observados $X$.
+	
+	Formalmente:
+	
+	\begin{equation}
+		\begin{split}
+			\hat{\theta} & = \arg\max_{\theta} l(\theta | X) \\
+			& = \arg\max_{\theta} \sum_{x \in X} log p_\theta (x)
+		\end{split}
+	\end{equation}
+	
+	lo cual es equivalente a minimizar la divergencia KL.
+
+	\begin{equation}
+		\hat{\theta} = \arg\min_{\theta} D_{KL}(P_{datos}||P_{\theta})
+	\end{equation}
+}
+
+Para los modelos basados en la verosimilitud, se busca que se ajusten lo mejor que se pueda a los datos de entrenamiento o que idealmente, logren representar idénticamente a la distribución real $p_{datos}$ y para nuevas observaciones $x$, el modelo debe de ser capaz de evaluar $p_{\theta}(x)$ de igual forma se debe de poder muestrear de la distribución $p_{\theta}(x)$. Por último el modelo debe obtener una representación latente significativa.
+
+Los objetivos principales de los modelos basados en la verosimilitud son:
+\begin{itemize}
+	\item Muestreo rápido
+	\item Inferencia rápida
+	\item Entrenamiento rápido
+	\item Buena calidad de las muestras
+	\item Buena compresión
+\end{itemize}
+
+Algunas de las clases más grandes de estos modelos
+\begin{itemize}
+	\item Modelos de flujo
+	\begin{itemize}
+		\item Flujos autorregresivos rápido para evaluar x arbitrarias, lento para muestrear
+		\item Flujos inversos autorregresivos lento para evaluar x arbitrarias, rápido para muestrear
+	\end{itemize}
+	\item Modelos de variable latente
+	\begin{itemize}
+		\item VAE lento para muestrear
+	\end{itemize}
+\end{itemize}
+
+A grandes rasgos los pasos que estos modelos siguen, son muestrear, evaluar la verosimilitud, entrenar y obtener una representación latente, pero si solo importara obtener muestras confiables se debe introducir la clase de modelos generativos implícitos.
+
+\subsection{Modelos implícitos}
+
+Los modelos implícitos no estiman una densidad de probabilidad explícitamente, solo se enfocan en la calidad de muestras generadas. De acuerdo al marco de trabajo de los modelos generativos, se comienza por tener muestras de una distribución \(p_{datos}: x_1 , x_2 , \dots , x_n \) luego se define un modelo paramétrico $q_\phi (z) = DNN(z \phi)$ que muestrea a partir de un vector latente muestreado de una fuente fijo de ruido (uniforme o gaussiana) $z \sim   p(z)$.
+
+Lo anterior quiere decir que $q_\phi (z)$ induce un modelo de densidad $p_{modelo}$, sin embargo, no se tiene una forma explícita de $p_{datos}$ o $p_{modelo}$, solo se tiene acceso a las observaciones que generan. Lo anterior obliga a buscar una medida de distancia entre  $p_{datos}$ y $p_{modelo}$ que no necesite la expresión explícita de $p_{modelo}$ y que se comporte diferente a la estimación de verosimilitud máxima. Algunos ejemplos de dichas métricas son la divergencia de Jensen Shannon JSD o la métrica Earth Mover’s Distance EMD.
+
+\subsubsection{GANS}
+
+Los modelos GAN son el primer ejemplo de un modelo que no se basa en MLE por consiguiente se estima el modelo generativo mediante un proceso adversario, el cual debe entrenar dos modelos simultáneamente
+\begin{enumerate}[label=\alph*)]
+	\item Un modelo generativo de variable latente $G_\theta$ que captura la distribución de los datos y genera muestras $x$ a partir de $z$ deterministicamente.
+	\item Un modelo discriminativo $D_\phi$ que estima la probabilidad de que una haya sido generada por $p_{datos}$ o por $G_\theta$.
+\end{enumerate}
+
+\addFigure{Figures/GANcomponents.jpg}{gancomponents}{Componentes de una GAN}{caption}
+
+Formalmente el objetivo de la GAN se escribe como sigue.
+
+\begin{equation}
+	\underset{\theta}{\min}\underset{\phi}{\max} \quad \mathbb{E}_{x \sim  p_{datos}}\left[ logD_\phi (x) \right] + \mathbb{E}_{z\sim p(z)}\left[ log( 1 - D_\phi ( G_\theta (z) ) )\right]
+\end{equation}
+
+La función objetivo describe un juego minimax entre el generador $G$ y el discriminador $D$, donde $G$ intenta minimizar la probabilidad de que sus muestras sean clasificadas como falsas por $D$ ($p_{datos} = p_\theta $)  y $D$ intenta maximizar la probabilidad para el problema de clasificación binaria ($p_{data} \neq p_\theta$).
+
+La noción de distancia que se tiene con el objetivo está relacionada con JSD al considerar al discriminador $D$ óptimo se tiene que el generador intenta optimizar la siguiente expresión.
+
+\begin{equation}
+	V(G, D^{*}) =  -log4 + 2D_{JSD}(p_{datos}||p_{G})
+\end{equation}
+
+Nos dice que para esta métrica, el generador óptimo para la función objetivo de la GAN se vuelve $p_G = p_{datos}$. Por último, para evitar la saturación de $D$ se reformula las funciones de pérdida como sigue: 
+
+\begin{align}
+	L^{(D)} &= - \mathbb{E}_{x \sim  p_{datos}}\left[ logD_\phi (x) \right] + \mathbb{E}_{z\sim p(z)}\left[ log( 1 - D_\phi ( G_\theta (z) ) )\right]\\
+	L^{(G)} &= - \mathbb{E}_{z \sim  p(z)} \left[ logD_\phi ( G_\theta (z) )\right]
+\end{align}
+
+La evaluación de estos modelos aún es un problema abierto, a diferencia de otros modelos no se puede reportar estimados de la verosimilitud explícitos en conjuntos de evaluación, sin embargo, estos modelos son rápidos para muestrear, generan muestras sorprendentemente similares y interpolan correctamente entre las muestras.
+
+\subsubsection{WGAN}
+
+La arquitectura WGAN tiene como objetivo minimizar EMD y tiene la bondad de mejorar la calidad de las muestras generadas. Su correspondiente función objetivo es.
+
+\begin{equation}
+	\underset{G}{\min}\underset{D \in D}{\max}\quad \mathbb{E}_{x \sim  p_{datos}}\left[ D (x) \right] + \mathbb{E}_{\tilde{x}\sim P_{G}}\left[ D(\tilde{x})\right]
+\end{equation}
+
+Este nuevo objetivo usa una nueva métrica para optimizar el generador que ataca las inestabilidades que surgen al usar JSD, de igual manera introduce la noción de continuidad de Lipschitz para estabilizar el entrenamiento de la GAN. En su versión donde la continuidad de LIpschitz se asegura mediante un término regularizador el objetivo cambia a
+
+\begin{equation}
+	\underset{G}{\min}\underset{D \in D}{\max}\quad \mathbb{E}_{x \sim  p_{datos}}\left[ D (x) \right] + \mathbb{E}_{\tilde{x}\sim P_{G}}\left[ D(\tilde{x})\right] + \lambda \mathbb{E}_{\hat{x}\sim P_{\hat{x}}}\left[ \left( || \nabla_{\hat{x}}D(\hat{x})||_{2} - 1\right) ^2 \right]\\
+\end{equation}
+\qquad\qquad donde:
+\[
+	\hat{x} \leftarrow \epsilon x + (1 - \epsilon) \tilde{x}
+\]
+
+\subsubsection{Conditional GAN}
+
+\begin{equation}
+	\underset{G}{\min}\underset{D}{\max} \mathbb{E}_{x,y}\left[ log D (x, G(x)) +  log (1 - D(x,y) ) \right]
+\end{equation}
+
+\subsection{Aprendizaje de representación}
+
+La idea principal detrás de aprendizaje representation es que en vez de tratar de modelar directamente el espacio muestral en altas dimensiones, se debe de intentar describir cada observación en el conjunto de entrenamiento,  usando un espacio latente de menor dimensión para luego aprender una función que mapea puntos en el espacio latente al dominio original.
+
+Hay que notar que el aprendizaje de representación no solo asigna valores a un conjunto de características del espacio latente para alguna observación si no que, aprende qué características son más importantes para poder describir las observaciones dadas y cómo generar estas características a partir del conjunto de entrenamiento.
+
+Algunos de los modelos que se especializan en son la InfoGAN y la BiGAN.
