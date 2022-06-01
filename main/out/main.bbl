@@ -650,6 +650,60 @@
     \field{year}{2010}
   \endentry
 
+  \entry{Gulrajani2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GI}{%
+         family={Gulrajani},
+         familyi={G\bibinitperiod},
+         given={Ishaan},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Faruk},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Arjovsky},
+         familyi={A\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DV}{%
+         family={Dumoulin},
+         familyi={D\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer
+  and information sciences, FOS: Computer and information sciences}
+    \strng{namehash}{GI+1}
+    \strng{fullhash}{GIAFAMDVCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.48550/ARXIV.1704.00028
+    \endverb
+    \field{title}{Improved Training of Wasserstein GANs}
+    \verb{url}
+    \verb https://arxiv.org/abs/1704.00028
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{Paganini2017}{article}{}
     \name{author}{3}{}{%
       {{hash=PM}{%

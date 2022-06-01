@@ -7,7 +7,7 @@
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
-En este capítulo se detallan las técnicas utilizadas así como el método experimental para la generación y evaluación de cascadas atmosféricas.. 
+En este capítulo se detallan las técnicas utilizadas así como el método experimental para la generación de cascadas atmosféricas.
 
 \section{Recolección y manejo de datos}
 
@@ -19,53 +19,54 @@ Como se ha mencionado en capítulos anteriores, las tareas que cada simulador co
 
 Para generar un resultado significativo sin pérdida de generalidad, se tomarán en cuenta las siguientes consideraciones:
 
-Utilizar un número relativamente “grande” de simulaciones.
-El número de observaciones debe ser un número “grande”, como referencia se intentará obtener un conjunto de datos con al menos el mismo número de observaciones que el conjunto MNIST.  
-
-Preprocesar el conjunto de datos.
-Para datos como los tiempos de arribo, el dominio de cada simulación diferirá en magnitudes que deben de tomarse en cuenta, por lo tanto técnicas de estandarización podrán ser utilizadas para tener una mejor estabilidad al entrenar el modelo. 
-
-Separación en conjuntos de entrenamiento, validación y evaluación. 
-Una vez que se cumpla lo anterior, los datos estarán listos para poder entrenar al modelo.
+\begin{itemize}
+    \item \textbf{Utilizar un número relativamente “grande” de simulaciones.}\\
+    El número de observaciones debe ser un número “grande”, como referencia se intentará obtener un conjunto de datos con al menos el mismo número de observaciones que el conjunto MNIST.
+    \item \textbf{Tratar de estandarizar el conjunto de datos.}\\
+    Para datos como los tiempos de arribo, el dominio de cada simulación diferirá en magnitudes que deben de tomarse en cuenta, por lo tanto técnicas de estandarización podrán ser utilizadas para tener una mejor estabilidad al entrenar el modelo. 
+\end{itemize}
 
 \section{Algoritmos}
 
+A continuación se proporciona el algoritmo de entrenamiento utilizado para la generación de cascadas.
+
+\subsection{WGAN}
+
+Una vez que se tenga el conjunto de entrenamiento compuesto de simulaciones de cascadas atmosféricas, se hará resolverá el problema de optimización planteado en (\ref{eq:WGANobjective}) mediante el algoritmo (\ref{alg:TrainAlgoWGAN}), obtenido de \parencite{Gulrajani2017}.
+
 \begin{algorithm}
-    \caption{Algoritmo de entrenamiento de la GAN}\label{alg:cap}
+    \caption{WGAN with gradient penalty.}
+    \label{alg:TrainAlgoWGAN}
     \begin{algorithmic}
-    \Require $k \geq 1$
-    % \Require $y = x^n$
-    \For {$N$ iteraciones}
-        
-    \EndFor
-    \State $y \gets 1$
-    \State $X \gets x$
-    \State $N \gets n$
-    \While{$N \neq 0$}
-    \If{$N$ is even}
-        \State $X \gets X \times X$
-        \State $N \gets \frac{N}{2}$  \Comment{This is a comment}
-    \ElsIf{$N$ is odd}
-        \State $y \gets y \times X$
-        \State $N \gets N - 1$
-    \EndIf
-    \EndWhile
+        \Require {$\lambda$, the gradient penalty coefficient. $n_{critic}$, the number of iterations per generator iteration. $m$, the batch size. $\alpha, \beta_1, \beta_2$, Adam optimizer hyperparameters.}
+        \Require $w_0$, initial critic parameters, $\theta_0$ initial generator parameters.
+        \While{$\theta$ has not converged}
+            \For{$t = 1, \dots, n_{critic}$}
+                \For{$i = 1, \dots, m$}
+                    \State Sample real data $\textbf{x} \sim \mathbb{P}_r$, latent variable $\textbf{z} \sim p(z)$, a random number $\epsilon \sim U[0,1]$.
+                    \State $\tilde{x} \gets G_\theta (z)$
+                    \State $\hat{x} \gets \epsilon x + (1 - \epsilon)\tilde{x}$
+                    \State $L^{(i)} \gets D_w(\tilde{x}) - D_w(x) + \lambda (\left\lVert \nabla_{\hat{x}}D_w(\hat{x})\right\rVert_{2} - 1 )^{2}$
+                \EndFor
+                \State $w \gets Adam(\nabla_w\frac{1}{m}\sum_{i=1}^mL^{(i)},w,\alpha,\beta_1,\beta_2)$
+            \EndFor
+            \State Sample a batch of latent variables $\{ z^{(i)}\} _{i=1}^m \sim p(z)$
+            \State $\theta \gets Adam(\nabla_w\frac{1}{m}\sum_{i=1}^m-D_w(G_\theta(z)),\theta,\alpha,\beta_1,\beta_2)$
+        \EndWhile
     \end{algorithmic}
 \end{algorithm}
 
 \section{Desarrollo del método}
 
-A continuación se muestra el método desglosado. 
-Obtener un banco de datos de simulaciones de cascadas atmosféricas acotadas a algún proceso seleccionado.
+A continuación se muestra el método experimental desglosado:
 
-Hacer el preprocesamiento de datos adecuado para normalizar la entrada de datos y así estabilizar el entrenamiento sin dejar de tomar en cuenta las consideraciones teóricas que dicho procesamiento implica.
-
-Elegir una arquitectura generativa adversaria y entrenarla para intentar generar nuevas cascadas.
-
-Se tomarán las nuevas muestras y se inspeccionarán visualmente comparándolas con las observaciones originales.
-
-Después de haber confirmado la similitud con las observaciones originales, se hará un análisis exploratorio de la dimensionalidad del vector latente y un análisis al proceso determinista de entradas y salidas de dicha red. 
-
-Una vez logrado lo anterior, cambiar de arquitectura y repetir el proceso, si se puede.
+\begin{enumerate}[label=\alph*)]
+    \item Obtener un banco de datos de simulaciones de cascadas atmosféricas acotadas a algún proceso seleccionado.
+    \item Hacer el preprocesamiento de datos adecuado para normalizar la entrada de datos y así estabilizar el entrenamiento sin dejar de tomar en cuenta las consideraciones teóricas que dicho procesamiento implica.
+    \item Elegir una arquitectura generativa adversaria y entrenarla para intentar generar nuevas cascadas.
+    \item Se tomarán las nuevas muestras y se inspeccionarán visualmente comparándolas con las observaciones originales.
+    \item Después de haber confirmado la similitud con las observaciones originales, se hará un análisis exploratorio de la dimensionalidad del vector latente y un análisis al proceso determinista de entradas y salidas de dicha red. 
+    \item Una vez logrado lo anterior, cambiar de arquitectura y repetir el proceso, si se puede.
+\end{enumerate}
 
 \subsection{Mapa del método experimental}

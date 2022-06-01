@@ -113,7 +113,9 @@ En otras palabras, la verosimilitud de un conjunto de parámetros $\theta$ es ig
 
 Dado un conjunto de observaciones finito $D$, muestreado de un distribución $p_{datos}$, el objetivo de un modelo generativo es aproximar $p_{datos}$ a través de una aproximación paramétrica $p_\theta$, de tal manera que, se puede pensar que el modelo aprende los parámetros que minimicen alguna suerte de distancia entre $p_{datos}$ y $p_\theta$ (). Matemáticamente se tiene el siguiente problema de optimización.
 
-\addFigure{Figures/gms-jpg.jpg}{distanceModels}{Modelo}{Caption}
+\addFigure{Figures/gms-jpg.jpg}{distanceModels}{Objetivo de los modelos generativos}{
+	Esquema general del poblema de optimización (\ref{eq:dist}).
+}
 
 \begin{equation}
 	\label{eq:dist}
@@ -183,11 +185,14 @@ Los modelos GAN son el primer ejemplo de un modelo que no se basa en MLE por con
 	\item Un modelo discriminativo $D_\phi$ que estima la probabilidad de que una haya sido generada por $p_{datos}$ o por $G_\theta$.
 \end{enumerate}
 
-\addFigure{Figures/GANcomponents.jpg}{gancomponents}{Componentes de una GAN}{caption}
+\addFigure{Figures/GANcomponents.jpg}{gancomponents}{Diagrama de los componentes de una GAN}{
+	Diagrama simplificado de los modelos $G_\phi$ y $D_\phi$. $\textbf{x}$ son muestras de $p_{datos}$ o de $p_{\theta}$, $\textbf{z}$ denota al vector de ruido aleatorio y $\textbf{y}$ es la predicción del discriminador $D$ aplicado a $\textbf{x}$.
+}
 
 Formalmente el objetivo de la GAN se escribe como sigue.
 
 \begin{equation}
+	\label{eq:GANobjective}
 	\underset{\theta}{\min}\underset{\phi}{\max} \quad \mathbb{E}_{x \sim  p_{datos}}\left[ logD_\phi (x) \right] + \mathbb{E}_{z\sim p(z)}\left[ log( 1 - D_\phi ( G_\theta (z) ) )\right]
 \end{equation}
 
@@ -213,6 +218,7 @@ La evaluación de estos modelos aún es un problema abierto, a diferencia de otr
 La arquitectura WGAN tiene como objetivo minimizar EMD y tiene la bondad de mejorar la calidad de las muestras generadas. Su correspondiente función objetivo es.
 
 \begin{equation}
+	\label{eq:WGANobjective}
 	\underset{G}{\min}\underset{D \in D}{\max}\quad \mathbb{E}_{x \sim  p_{datos}}\left[ D (x) \right] + \mathbb{E}_{\tilde{x}\sim P_{G}}\left[ D(\tilde{x})\right]
 \end{equation}
 
@@ -229,6 +235,7 @@ Este nuevo objetivo usa una nueva métrica para optimizar el generador que ataca
 \subsubsection{Conditional GAN}
 
 \begin{equation}
+	\label{eq:CGANobjective}
 	\underset{G}{\min}\underset{D}{\max} \mathbb{E}_{x,y}\left[ log D (x, G(x)) +  log (1 - D(x,y) ) \right]
 \end{equation}
 
