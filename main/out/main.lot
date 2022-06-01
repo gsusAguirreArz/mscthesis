@@ -5,6 +5,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces The effects of treatments X and Y on the four groups studied.\relax }}{24}{table.caption.86}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Parámetros de la base de datos.\relax }}{23}{table.caption.83}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Capas del generador $G_\theta $\relax }}{30}{table.caption.204}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Capas del Discriminador $D_\phi $\relax }}{30}{table.caption.205}%

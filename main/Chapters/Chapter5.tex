@@ -18,26 +18,48 @@ A continuación se describirán los resultados por cada etapa del método experi
 
 Para obtener el conjunto de datos, primero se optó por intentar generar una base de datos usando el simulador CORSIKA, sin embargo, se observo que la generación de un dataset de al menos $60000$ observaciones, tomaría un tiempo inviable con el equipo de cómputo con el que se disponía. Del mismo modo, la complejidad adicional que la interfaz del programa y la inexperiencia con el mismo, agregaba una dificultad extra a la hora de configurar los parámetros del evento. 
 
-Por consiguiente, se decidió buscar una base de datos de simulaciones que estuvieran disponibles al público. De modo que el banco de datos que se usó fue tomado de \parencite{Erdmann2018b}, el cual contiene $100000$ simulaciones de cascadas electromagnéticas con los siguientes parámetros.
+Por consiguiente, se decidió buscar una base de datos de simulaciones que estuvieran disponibles al público. De modo que el banco de datos que se usó fue tomado de \parencite{Erdmann2018b}, el cual contiene $100000$ simulaciones de cascadas electromagnéticas (Table~\ref{tab:DBfeatures}).
 
-%insertar tabla de df.info()
+\begin{table}
+    \caption{Parámetros de la base de datos.}
+    % $N=100000$
+    \label{tab:DBfeatures}
+    \centering
+    \begin{tabular}{l l l}
+        \toprule
+        \textbf{Etiqueta} & \textbf{Descripción} & \textbf{Dimensión} \\
+        \midrule
+        showermax & Coordenadas del máximo de la cascada & $(N,3)$\\
+        time & Tiempos de arribo al detector $i$ & $(N,9,9,1)$\\
+        Xmax & Altura de desarrollo máximo & $(N,)$\\
+        signal & Contador de particulas en detector $i$ en $80$ intervalos de tiempo & $(N,9,9,80)$\\
+        logE & Energía de la partícula primaria & $(N,)$\\
+        showeraxis & Coordenadas del eje de la cascada & $(N,3)$\\
+        showercore & Coordenadas del núcleo de la cascada & $(N,3)$\\
+        mass & Masa de la partícula primaria & $(N,)$\\
+        detector & Coordenadas del detector $i$ & $(81,3)$\\
+        \bottomrule\\
+    \end{tabular}
+\end{table}
 
-Para la selección y preprocesamiento de datos se seleccionó la señal que contiene los tiempos de arribo y la energía asociada a cada cascada. Después se hizo el ajuste propuesto en \parencite{Erdmann2018b} a los tiempos de arribo \ref{eq:}, sin embargo el ajuste no lograba estandarizar los datos, así que se hizo un mapeo lineal al dominio $[-1,1]$.
+Para la selección y preprocesamiento de datos se seleccionó la señal que contiene los tiempos de arribo y la energía asociada a cada cascada. Después se hizo el ajuste propuesto en \parencite{Erdmann2018b} a los tiempos de arribo \ref{eq:proposedTimeTrans}, sin embargo el ajuste no lograba un buen entrenamiento, así que se hizo un mapeo lineal al dominio $[1,2]$.
 
-%insertar ajuste propuesto
-%insertar imagenes post procesamiento y pre procesamiento
+\begin{equation}
+    \label{eq:proposedTimeTrans}
+    \tilde{t}_{0,i} = \frac{t_{0,i} - \tau_{evento}}{\sigma_{t,datos}}
+\end{equation}
 
-Para el escalar de la energía de cada cascada, se decidió categorizar la variable continua en $4$ rangos energéticos, los cuales son $x$.
+\addFigure{Figures/timesignals.png}{timesignals}{Datos de entrenamiento}{
+    Gráficas de $4$ eventos detectados por un arreglo de detectores con $1000$ \textit{m} de separación entre ellos, con su respectiva energía.
+}
 
-%insertar tabla de post procesamiento y pre procesamiento
+Para el escalar de la energía de cada cascada, se decidió categorizar la variable continua en $4$ rangos energéticos, los cuales son $[(18.499, 18.875] < (18.875, 19.25] < (19.25, 19.625] < (19.625, 20.0]]$.
 
 \subsection*{Modelo y entrenamientos}
 
-Para la arquitectura del modelo se optaron por capas convolucionales para preservar la información entre detectores y los modelos tienen las siguientes propiedades.
+Para la arquitectura de los modelos se optó por usar capas convolucionales, con el fín de preservar la información entre detectores. Para una descripción mas detallada de cada arquitectura revisar \textbf{Anexo \ref{AppendixA}}.
 
-%insertar info de los modelos en un tabla
-El único parámetro que se modificó fue la dimensión del vector latente, y se guardaron los modelos resultantes para cada dimensión, sin embargo se observó que para dimensiones bajas el modelo llegaba a un colapso de modos con más frecuencia, como se muestra a continuación. 
-
+El único parámetro que se modificó fue la dimensión del vector latente, y se guardaron los modelos resultantes para cada dimensión, sin embargo se observó que para dimensiones bajas el modelo llegaba a un colapso de modos con más frecuencia, como se muestra a continuación.
 %insertar tabla de modelos dimension vector latente y mode collapse
 %insertar gráficas de pérdidas en el entrenamiento.
 
@@ -45,7 +67,6 @@ El único parámetro que se modificó fue la dimensión del vector latente, y se
 
 Cascadas electromagnéticas generadas con los modelos 
 %\ref{tabla}
-
 %insertar cascadas generadas.
 
 Comparación con las cascadas de entrenamiento.
@@ -55,26 +76,6 @@ Comparación con $50$ cascadas generadas usando CORSIKA.
 \subsection*{Combinaciones lineales de vectores latentes}
 
 Resultados al promediar vectores latentes y hacer una combinación lineal de estos para después ser insertados en categorías energéticas diferentes.
-
 %insertar imágenes.
-
-\begin{table}
-    \caption{The effects of treatments X and Y on the four groups studied.}
-    \label{tab:treatments}
-    \centering
-    \begin{tabular}{l l l}
-        \toprule
-        \textbf{Groups} & \textbf{Treatment X} & \textbf{Treatment Y} \\
-        \midrule
-        1 & 0.2 & 0.8\\
-        2 & 0.17 & 0.7\\
-        3 & 0.24 & 0.75\\
-        4 & 0.68 & 0.3\\
-        \bottomrule\\
-    \end{tabular}
-\end{table}
-
-(e.g. Table~\ref{tab:treatments}).
-
 
 \lstinputlisting[language=Python]{Code/dfa.py}

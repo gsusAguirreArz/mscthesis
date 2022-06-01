@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.26)  1 JUN 2022 04:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.26)  1 JUN 2022 07:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -754,10 +754,10 @@ Now handling font encoding PU ...
 Package hyperref Info: Option `breaklinks' set `true' on input line 58.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (out/main.aux (out/Extras/TitlePage.aux)
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
- (out/Extras/Declaration.aux) (out/Extras/Quotation.aux) (out/Extras/Abstract.aux) (out/Extras/Acknowledgements.aux) (out/Extras/Abbreviations.aux) (out/Extras/Constants.aux) (out/Extras/Symbols.aux) (out/Chapters/Chapter1.aux) (out/Chapters/Chapter2.aux) (out/Chapters/Chapter3.aux) (out/Chapters/Chapter4.aux) (out/Chapters/Chapter5.aux) (out/Chapters/Chapter6.aux) (out/Appendices/AppendixA.aux))
+ (out/main.aux
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -993,8 +993,6 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 5
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 1: section
-\openout2 = `Extras/TitlePage.aux'.
-
 (./Extras/TitlePage.tex
 <Figures/Logos/escudo_IPN.png, id=188, 1235.61626pt x 1323.94624pt>
 File: Figures/Logos/escudo_IPN.png Graphic file (type png)
@@ -1030,13 +1028,7 @@ Overfull \hbox (1.90001pt too wide) in paragraph at lines 3--58
 
 
 
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/Logos/escudo_IPN.png> <./Figures/Logos/escudo_cic.png>])
-\openout2 = `Extras/Declaration.aux'.
-
- (./Extras/Declaration.tex [2
-
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/Logos/escudo_IPN.png> <./Figures/Logos/escudo_cic.png>]) (./Extras/Declaration.tex [2
 
 ]
 --------------------
@@ -1050,31 +1042,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 1: section
 [3] [4
 
-])
-\openout2 = `Extras/Quotation.aux'.
-
- (./Extras/Quotation.tex) [5
-
-
-]
-\openout2 = `Extras/Abstract.aux'.
-
- (./Extras/Abstract.tex [6
-
-
+]) (./Extras/Quotation.tex) (./Extras/Abstract.tex [5] [6
 
 ]
 --------------------
  Resumen
 --------------------
-)
+) (./Extras/Acknowledgements.tex
 1: section
-[7]
-\openout2 = `Extras/Acknowledgements.aux'.
-
- (./Extras/Acknowledgements.tex [8
-
-
+[7] [8
 
 ]
 --------------------
@@ -1083,7 +1059,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 )
 1: section
 [9] [10
-
 
 ] (out/main.toc
 LaTeX Info: Redefining \. on input line 2.
@@ -1125,36 +1100,21 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
-
+ (./Extras/Abbreviations.tex
 1: section
-[17]
-\openout2 = `Extras/Abbreviations.aux'.
+[17] [18
 
- (./Extras/Abbreviations.tex [18
-
-
-])
+]) (./Extras/Constants.tex
 1: section
-[19]
-\openout2 = `Extras/Constants.aux'.
+[19] [20
 
- (./Extras/Constants.tex [20
-
-
-
-])
+]) (./Extras/Symbols.tex
 1: section
-[21]
-\openout2 = `Extras/Symbols.aux'.
-
- (./Extras/Symbols.tex [22
-
-
+[21] [22
 
 ])
 1: section
 [23] [24
-
 
 ]
 --------------------
@@ -1165,32 +1125,24 @@ LaTeX Info: Redefining \% on input line 2.
 
 ]
 1: section
-\openout2 = `Chapters/Chapter1.aux'.
-
 (./Chapters/Chapter1.tex
 Cap\'{\i }tulo 1.
 1: section
 [1
 
-
 ]
 LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
- [2])
-LaTeX Info: Redefining \. on input line 142.
-LaTeX Info: Redefining \% on input line 142.
- [3]
-\openout2 = `Chapters/Chapter2.aux'.
-
- (./Chapters/Chapter2.tex [4
-
-
+ [2]) (./Chapters/Chapter2.tex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [3] [4
 
 ]
 Cap\'{\i }tulo 2.
 1: section
 [5]
-<Figures/showercomponents-jpg.jpg, id=443, 823.075pt x 947.54pt>
+<Figures/showercomponents-jpg.jpg, id=449, 823.075pt x 947.54pt>
 File: Figures/showercomponents-jpg.jpg Graphic file (type jpg)
 <use Figures/showercomponents-jpg.jpg>
 Package pdftex.def Info: Figures/showercomponents-jpg.jpg  used on input line 37.
@@ -1198,12 +1150,12 @@ Package pdftex.def Info: Figures/showercomponents-jpg.jpg  used on input line 37
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
  [6 <./Figures/showercomponents-jpg.jpg>]
-<Figures/logitudinaldistribution.jpeg, id=451, 356.0502pt x 250.536pt>
+<Figures/logitudinaldistribution.jpeg, id=458, 356.0502pt x 250.536pt>
 File: Figures/logitudinaldistribution.jpeg Graphic file (type jpg)
 <use Figures/logitudinaldistribution.jpeg>
 Package pdftex.def Info: Figures/logitudinaldistribution.jpeg  used on input line 47.
 (pdftex.def)             Requested size: 178.02466pt x 125.26768pt.
-<Figures/eas-jpg.jpg, id=455, 1571.8725pt x 1608.0075pt>
+<Figures/eas-jpg.jpg, id=462, 1571.8725pt x 1608.0075pt>
 File: Figures/eas-jpg.jpg Graphic file (type jpg)
 <use Figures/eas-jpg.jpg>
 Package pdftex.def Info: Figures/eas-jpg.jpg  used on input line 67.
@@ -1211,7 +1163,7 @@ Package pdftex.def Info: Figures/eas-jpg.jpg  used on input line 67.
 LaTeX Info: Redefining \. on input line 70.
 LaTeX Info: Redefining \% on input line 70.
  [7 <./Figures/logitudinaldistribution.jpeg>]
-<Figures/All-particle-cosmic-rays-energy-spectrum.jpg, id=464, 572.1375pt x 667.49374pt>
+<Figures/All-particle-cosmic-rays-energy-spectrum.jpg, id=470, 572.1375pt x 667.49374pt>
 File: Figures/All-particle-cosmic-rays-energy-spectrum.jpg Graphic file (type jpg)
 <use Figures/All-particle-cosmic-rays-energy-spectrum.jpg>
 Package pdftex.def Info: Figures/All-particle-cosmic-rays-energy-spectrum.jpg  used on input line 85.
@@ -1222,22 +1174,17 @@ LaTeX Info: Redefining \% on input line 88.
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
  [9 <./Figures/All-particle-cosmic-rays-energy-spectrum.jpg>]
-<Figures/asico-jpg.jpg, id=478, 1688.3075pt x 1214.5375pt>
+<Figures/asico-jpg.jpg, id=484, 1688.3075pt x 1214.5375pt>
 File: Figures/asico-jpg.jpg Graphic file (type jpg)
 <use Figures/asico-jpg.jpg>
 Package pdftex.def Info: Figures/asico-jpg.jpg  used on input line 109.
 (pdftex.def)             Requested size: 844.15169pt x 607.26727pt.
 LaTeX Info: Redefining \. on input line 126.
 LaTeX Info: Redefining \% on input line 126.
- [10 <./Figures/asico-jpg.jpg>])
-LaTeX Info: Redefining \. on input line 143.
-LaTeX Info: Redefining \% on input line 143.
- [11]
-\openout2 = `Chapters/Chapter3.aux'.
-
- (./Chapters/Chapter3.tex [12
-
-
+ [10 <./Figures/asico-jpg.jpg>]) (./Chapters/Chapter3.tex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [11] [12
 
 ]
 Cap\'{\i }tulo 3.
@@ -1299,7 +1246,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-<Figures/gms-jpg.jpg, id=502, 835.12pt x 544.0325pt>
+<Figures/gms-jpg.jpg, id=508, 835.12pt x 544.0325pt>
 File: Figures/gms-jpg.jpg Graphic file (type jpg)
 <use Figures/gms-jpg.jpg>
 Package pdftex.def Info: Figures/gms-jpg.jpg  used on input line 118.
@@ -1324,7 +1271,7 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 LaTeX Info: Redefining \. on input line 177.
 LaTeX Info: Redefining \% on input line 177.
  [16 <./Figures/gms-jpg.jpg>]
-<Figures/GANcomponents.jpg, id=517, 734.745pt x 644.4075pt>
+<Figures/GANcomponents.jpg, id=523, 734.745pt x 644.4075pt>
 File: Figures/GANcomponents.jpg Graphic file (type jpg)
 <use Figures/GANcomponents.jpg>
 Package pdftex.def Info: Figures/GANcomponents.jpg  used on input line 190.
@@ -1338,75 +1285,66 @@ LaTeX Info: Redefining \% on input line 205.
  [17 <./Figures/GANcomponents.jpg>]
 LaTeX Info: Redefining \. on input line 248.
 LaTeX Info: Redefining \% on input line 248.
- [18])
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [19]
-\openout2 = `Chapters/Chapter4.aux'.
-
- (./Chapters/Chapter4.tex [20
-
-
+ [18]) (./Chapters/Chapter4.tex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [19] [20
 
 ]
 Cap\'{\i }tulo 4.
 1: section
 [21]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 38.
-)
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
+) (./Chapters/Chapter5.tex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
  [22]
-\openout2 = `Chapters/Chapter5.aux'.
-
- (./Chapters/Chapter5.tex
 Cap\'{\i }tulo 5.
 
-LaTeX Warning: Reference `eq:' on page 23 undefined on input line 25.
+Overfull \hbox (12.91667pt too wide) in paragraph at lines 28--43
+ [][] 
+ []
 
 1: section
 [23
 
-
-
-] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+]
+<Figures/timesignals.png, id=582, 922.1652pt x 714.7503pt>
+File: Figures/timesignals.png Graphic file (type png)
+<use Figures/timesignals.png>
+Package pdftex.def Info: Figures/timesignals.png  used on input line 54.
+(pdftex.def)             Requested size: 461.08148pt x 357.37428pt.
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 80.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 81.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (./Code/dfa.py
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
- [24]))
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
- [25]
-\openout2 = `Chapters/Chapter6.aux'.
-
- (./Chapters/Chapter6.tex [26
-
-
-
-]
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+ [24 <./Figures/timesignals.png>]
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+ [25])) (./Chapters/Chapter6.tex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [26]
 Cap\'{\i }tulo 6.
-)
+) (./Appendices/AppendixA.tex
 1: section
-[27]
-\openout2 = `Appendices/AppendixA.aux'.
+[27
 
- (./Appendices/AppendixA.tex [28
-
-
+] [28
 
 ]
 Ap\'{e}ndice A.
 )
 1: section
-[29] [30
-
-
-]
+[29]
+LaTeX Info: Redefining \. on input line 167.
+LaTeX Info: Redefining \% on input line 167.
+ [30]
 Overfull \hbox (0.90659pt too wide) in paragraph at lines 167--167
 \T1/ppl/m/n/10 mag-ne-tic Ca-lo-ri-me-ter Sho-wers Using a Was-sers-tein Ge-ne-ra-ti-ve Ad-ver-sa-rial Net-work^^T.
  []
@@ -1417,45 +1355,44 @@ Overfull \hbox (11.35571pt too wide) in paragraph at lines 167--167
  []
 
 1: section
-[31]
+[31
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
 LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
  [32]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
- (out/main.aux (out/Extras/TitlePage.aux)
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
- (out/Extras/Declaration.aux) (out/Extras/Quotation.aux) (out/Extras/Abstract.aux) (out/Extras/Acknowledgements.aux) (out/Extras/Abbreviations.aux) (out/Extras/Constants.aux) (out/Extras/Symbols.aux) (out/Chapters/Chapter1.aux) (out/Chapters/Chapter2.aux) (out/Chapters/Chapter3.aux) (out/Chapters/Chapter4.aux) (out/Chapters/Chapter5.aux) (out/Chapters/Chapter6.aux) (out/Appendices/AppendixA.aux))
+ (out/main.aux
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2BFED8C4B6B17A82899AFEA245366C92;7450.
+(rerunfilecheck)             Checksum: F87C18304C81EB5984C33E7E0E0960CA;7310.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.26395pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31315 strings out of 481239
- 617716 string characters out of 5920377
- 1470404 words of memory out of 5000000
- 45749 multiletter control sequences out of 15000+600000
- 621526 words of font info for 195 fonts, out of 8000000 for 9000
+ 31221 strings out of 481239
+ 615430 string characters out of 5920377
+ 1426218 words of memory out of 5000000
+ 45714 multiletter control sequences out of 15000+600000
+ 621564 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,21n,85p,947b,3897s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on out/main.pdf (58 pages, 1401901 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on out/main.pdf (58 pages, 1442448 bytes).
 PDF statistics:
- 880 PDF objects out of 1000 (max. 8388607)
- 784 compressed objects within 8 object streams
- 275 named destinations out of 1000 (max. 500000)
- 414 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 894 PDF objects out of 1000 (max. 8388607)
+ 796 compressed objects within 8 object streams
+ 279 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
