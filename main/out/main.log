@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.26)  1 JUN 2022 07:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.26)  1 JUN 2022 17:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1142,7 +1142,7 @@ LaTeX Info: Redefining \% on input line 3.
 Cap\'{\i }tulo 2.
 1: section
 [5]
-<Figures/showercomponents-jpg.jpg, id=449, 823.075pt x 947.54pt>
+<Figures/showercomponents-jpg.jpg, id=451, 823.075pt x 947.54pt>
 File: Figures/showercomponents-jpg.jpg Graphic file (type jpg)
 <use Figures/showercomponents-jpg.jpg>
 Package pdftex.def Info: Figures/showercomponents-jpg.jpg  used on input line 37.
@@ -1150,12 +1150,12 @@ Package pdftex.def Info: Figures/showercomponents-jpg.jpg  used on input line 37
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
  [6 <./Figures/showercomponents-jpg.jpg>]
-<Figures/logitudinaldistribution.jpeg, id=458, 356.0502pt x 250.536pt>
+<Figures/logitudinaldistribution.jpeg, id=460, 356.0502pt x 250.536pt>
 File: Figures/logitudinaldistribution.jpeg Graphic file (type jpg)
 <use Figures/logitudinaldistribution.jpeg>
 Package pdftex.def Info: Figures/logitudinaldistribution.jpeg  used on input line 47.
 (pdftex.def)             Requested size: 178.02466pt x 125.26768pt.
-<Figures/eas-jpg.jpg, id=462, 1571.8725pt x 1608.0075pt>
+<Figures/eas-jpg.jpg, id=464, 1571.8725pt x 1608.0075pt>
 File: Figures/eas-jpg.jpg Graphic file (type jpg)
 <use Figures/eas-jpg.jpg>
 Package pdftex.def Info: Figures/eas-jpg.jpg  used on input line 67.
@@ -1163,7 +1163,7 @@ Package pdftex.def Info: Figures/eas-jpg.jpg  used on input line 67.
 LaTeX Info: Redefining \. on input line 70.
 LaTeX Info: Redefining \% on input line 70.
  [7 <./Figures/logitudinaldistribution.jpeg>]
-<Figures/All-particle-cosmic-rays-energy-spectrum.jpg, id=470, 572.1375pt x 667.49374pt>
+<Figures/All-particle-cosmic-rays-energy-spectrum.jpg, id=472, 572.1375pt x 667.49374pt>
 File: Figures/All-particle-cosmic-rays-energy-spectrum.jpg Graphic file (type jpg)
 <use Figures/All-particle-cosmic-rays-energy-spectrum.jpg>
 Package pdftex.def Info: Figures/All-particle-cosmic-rays-energy-spectrum.jpg  used on input line 85.
@@ -1174,7 +1174,7 @@ LaTeX Info: Redefining \% on input line 88.
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
  [9 <./Figures/All-particle-cosmic-rays-energy-spectrum.jpg>]
-<Figures/asico-jpg.jpg, id=484, 1688.3075pt x 1214.5375pt>
+<Figures/asico-jpg.jpg, id=486, 1688.3075pt x 1214.5375pt>
 File: Figures/asico-jpg.jpg Graphic file (type jpg)
 <use Figures/asico-jpg.jpg>
 Package pdftex.def Info: Figures/asico-jpg.jpg  used on input line 109.
@@ -1246,7 +1246,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-<Figures/gms-jpg.jpg, id=508, 835.12pt x 544.0325pt>
+<Figures/gms-jpg.jpg, id=510, 835.12pt x 544.0325pt>
 File: Figures/gms-jpg.jpg Graphic file (type jpg)
 <use Figures/gms-jpg.jpg>
 Package pdftex.def Info: Figures/gms-jpg.jpg  used on input line 118.
@@ -1271,7 +1271,7 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 LaTeX Info: Redefining \. on input line 177.
 LaTeX Info: Redefining \% on input line 177.
  [16 <./Figures/gms-jpg.jpg>]
-<Figures/GANcomponents.jpg, id=523, 734.745pt x 644.4075pt>
+<Figures/GANcomponents.jpg, id=525, 734.745pt x 644.4075pt>
 File: Figures/GANcomponents.jpg Graphic file (type jpg)
 <use Figures/GANcomponents.jpg>
 Package pdftex.def Info: Figures/GANcomponents.jpg  used on input line 190.
@@ -1309,7 +1309,7 @@ Overfull \hbox (12.91667pt too wide) in paragraph at lines 28--43
 [23
 
 ]
-<Figures/timesignals.png, id=582, 922.1652pt x 714.7503pt>
+<Figures/timesignals.png, id=584, 922.1652pt x 714.7503pt>
 File: Figures/timesignals.png Graphic file (type png)
 <use Figures/timesignals.png>
 Package pdftex.def Info: Figures/timesignals.png  used on input line 54.
@@ -1317,15 +1317,15 @@ Package pdftex.def Info: Figures/timesignals.png  used on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 81.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [24 <./Figures/timesignals.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 99.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (./Code/dfa.py
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
- [24 <./Figures/timesignals.png>]
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
  [25])) (./Chapters/Chapter6.tex
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
@@ -1370,7 +1370,7 @@ LaTeX Info: Redefining \% on input line 30.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F87C18304C81EB5984C33E7E0E0960CA;7310.
+(rerunfilecheck)             Checksum: E4D27425682DB88133AC392CF94B17C7;7310.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1381,18 +1381,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31221 strings out of 481239
- 615430 string characters out of 5920377
- 1426218 words of memory out of 5000000
- 45714 multiletter control sequences out of 15000+600000
+ 31223 strings out of 481239
+ 615468 string characters out of 5920377
+ 1405786 words of memory out of 5000000
+ 45715 multiletter control sequences out of 15000+600000
  621564 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,21n,85p,947b,3897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,21n,83p,947b,3912s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on out/main.pdf (58 pages, 1442448 bytes).
+Output written on out/main.pdf (58 pages, 1442591 bytes).
 PDF statistics:
- 894 PDF objects out of 1000 (max. 8388607)
- 796 compressed objects within 8 object streams
- 279 named destinations out of 1000 (max. 500000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 799 compressed objects within 8 object streams
+ 280 named destinations out of 1000 (max. 500000)
  419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
