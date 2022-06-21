@@ -2,16 +2,22 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Mecanismos de interacción}}{6}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Distribucion longitudinal}}{7}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Arreglo de detectores}}{8}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Espectro de energía}}{9}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Arquitectura ASICO}}{10}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mecanismos de interacción}}{6}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Distribucion longitudinal}}{7}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Arreglo de detectores}}{8}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Espectro de energía}}{9}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Arquitectura ASICO}}{10}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Objetivo de los modelos generativos}}{16}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de los componentes de una GAN}}{17}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Objetivo de los modelos generativos}}{16}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de los componentes de una GAN}}{17}{figure.caption.55}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Datos de entrenamiento}}{24}{figure.caption.85}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Datos de entrenamiento}}{24}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Cascadas generadas 0}}{25}{figure.caption.89}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Cascadas reales 0}}{25}{figure.caption.90}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Perdidas 0}}{26}{figure.caption.91}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Cascadas generadas 1}}{27}{figure.caption.93}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Cascadas reales 1}}{27}{figure.caption.94}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Perdidas 0}}{28}{figure.caption.95}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

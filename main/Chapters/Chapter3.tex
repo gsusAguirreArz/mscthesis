@@ -234,6 +234,8 @@ Este nuevo objetivo usa una nueva métrica para optimizar el generador que ataca
 
 \subsubsection{Conditional GAN}
 
+Para condicionar un modelo a un conjunto de etiquetas se sigue la función de perdida (Eq. \ref{eq:CGANobjective}).
+
 \begin{equation}
 	\label{eq:CGANobjective}
 	\underset{G}{\min}\underset{D}{\max} \mathbb{E}_{x,y}\left[ log D (x, G(x)) +  log (1 - D(x,y) ) \right]

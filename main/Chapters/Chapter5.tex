@@ -59,7 +59,7 @@ Para el escalar de la energía de cada cascada, se decidió categorizar la varia
 
 Para la arquitectura de los modelos se optó por usar capas convolucionales, con el fín de preservar la información entre detectores. Para una descripción mas detallada de cada arquitectura revisar \textbf{Anexo \ref{AppendixA}}.
 
-El único parámetro que se modificó fue la dimensión del vector latente, y se guardaron los modelos resultantes para cada dimensión, sin embargo se observó que para dimensiones bajas el modelo llegaba a un colapso de modos con más frecuencia (Table~\ref{tab:latentDimTrains}).
+El único parámetro que se modificó fue la dimensión del vector latente (Table~\ref{tab:modelhyperparameters}), y se guardaron los modelos resultantes para cada dimensión, sin embargo se observó que para dimensiones bajas el modelo llegaba a un colapso de modos con más frecuencia (Table~\ref{tab:latentDimTrains}).
 
 \begin{table}
     \caption{Parámetros de la base de datos.}
@@ -83,17 +83,113 @@ El único parámetro que se modificó fue la dimensión del vector latente, y se
 
 \subsection*{Generación de cascadas electromagnéticas}
 
-Cascadas electromagnéticas generadas con los modelos 
+\begin{table}
+    \caption{Parámetros del modelo.}
+    \label{tab:modelhyperparameters}
+    \raggedleft
+    \begin{tabular}{l l l}
+        \toprule
+        \textbf{Nombre} & \textbf{Descripción} & \textbf{Valor inicial} \\
+        \midrule
+        LATENT\_DIM*    & Dimensión del espacio latente    & 128\\
+        GEN\_EMBEDDING    & Dimensión del embebido de etiquetas   & 128\\
+        BATCH\_SIZE   & Tamaño de lote de datos   & 256\\
+        LEARNING\_RATE    &  Tasa de aprendizaje  & 1e-4\\
+        FEATURES\_CRITIC    & Dimensión de capas internas del modelo discriminativo & 64\\
+        FEATURES\_GEN    & Dimensión de capas internas del modelo generativo & 64\\
+        CRITIC\_ITERATIONS   & Número de iteraciones para el entrenamiento del modelo discriminativo  & 5\\
+        LAMBDA\_GP   & Peso del termino regularizador (GP)  & 10\\
+        \bottomrule\\
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Dimensión latente = 128}
+
+Cascadas electromagnéticas generadas con un vector latente con dimensión de 128  (Figura ~ \ref{fig:ld128r0fakeshower}).
 %\ref{tabla}
 %insertar cascadas generadas.
 
-Comparación con las cascadas de entrenamiento.
+\begin{figure}
+    \centering
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD128_R0/fake.png}
+    \decoRule
+    \caption[Cascadas generadas 0]{
+        Cascadas generadas con una vector latente con dimension 128
+    }
+    \label{fig:ld128r0fakeshower}
+\end{figure}
 
-Comparación con $50$ cascadas generadas usando CORSIKA.
+Comparación con las cascadas reales (Figura ~ \ref{fig:ld128r0realshower}).
 
-\subsection*{Combinaciones lineales de vectores latentes}
+\begin{figure}
+    \centering
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD128_R0/real.png}
+    \decoRule
+    \caption[Cascadas reales 0]{
+        Cascadas reales
+    }
+    \label{fig:ld128r0realshower}
+\end{figure}
 
-Resultados al promediar vectores latentes y hacer una combinación lineal de estos para después ser insertados en categorías energéticas diferentes.
+Perdidas de cada modelo (Figura ~ \ref{fig:ld128r0losses}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD128_R0/critic.png}
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD128_R0/gen.png}
+    \decoRule
+    \caption[Perdidas 0]{
+        Funciones de perdida el modelo anterior.
+    }
+    \label{fig:ld128r0losses}
+\end{figure}
+
+\subsubsection*{Dimensión latente = 4}
+
+Cascadas electromagnéticas generadas con un vector latente con dimensión de 4  (Figura ~ \ref{fig:ld4r0fakeshower}).
+%\ref{tabla}
+%insertar cascadas generadas.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD4_R4/fakestep4.png}
+    \decoRule
+    \caption[Cascadas generadas 1]{
+        Cascadas generadas con una vector latente con dimension 4
+    }
+    \label{fig:ld4r0fakeshower}
+\end{figure}
+
+Comparación con las cascadas reales (Figura ~ \ref{fig:ld4r0realshower}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD4_R4/realstep4.png}
+    \decoRule
+    \caption[Cascadas reales 1]{
+        Cascadas reales
+    }
+    \label{fig:ld4r0realshower}
+\end{figure}
+
+Perdidas de cada modelo (Figura ~ \ref{fig:ld4r0losses}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD4_R4/criticloss.png}
+    \includegraphics[width=100mm,scale=0.5]{Figures/res/CWGANGP_LD4_R4/genloss.png}
+    \decoRule
+    \caption[Perdidas 0]{
+        Funciones de perdida el modelo anterior.
+    }
+    \label{fig:ld4r0losses}
+\end{figure}
+
+
+
+% \subsection*{Combinaciones lineales de vectores latentes}
+
+% Resultados al promediar vectores latentes y hacer una combinación lineal de estos para después ser insertados en categorías energéticas diferentes.
 %insertar imágenes.
 
-\lstinputlisting[language=Python]{Code/dfa.py}
+% \lstinputlisting[language=Python]{Code/dfa.py}
