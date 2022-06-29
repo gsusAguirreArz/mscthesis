@@ -1,47 +1,47 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
-\contentsline {chapter}{Declaraci\'on de Autor\'ia}{\es@scroman {iii}}{section*.1}%
+\contentsline {chapter}{Resumen}{\es@scroman {v}}{section*.1}%
 \contentsline {chapter}{Resumen}{\es@scroman {vii}}{section*.2}%
 \contentsline {chapter}{Agradecimientos}{\es@scroman {ix}}{section*.3}%
-\contentsline {chapter}{\numberline {1}Introduccion}{1}{chapter.15}%
-\contentsline {section}{\numberline {1.1}Introducción}{1}{section.16}%
-\contentsline {section}{\numberline {1.2}Planteamiento del problema}{2}{section.17}%
-\contentsline {section}{\numberline {1.3}Objetivo de la tesis}{2}{section.18}%
-\contentsline {section}{\numberline {1.4}Delimitación del tema}{2}{section.22}%
-\contentsline {section}{\numberline {1.5}Organización de la tesis}{3}{section.23}%
-\contentsline {chapter}{\numberline {2}Estado del arte}{5}{chapter.24}%
-\contentsline {section}{\numberline {2.1}Antecedentes}{5}{section.25}%
-\contentsline {section}{\numberline {2.2}Cascadas Atmosféricas}{6}{section.26}%
-\contentsline {subsection}{\numberline {2.2.1}Propiedades de las cascadas atmosféricas}{7}{subsection.29}%
-\contentsline {subsection}{\numberline {2.2.2}Métodos de detección}{7}{subsection.30}%
-\contentsline {section}{\numberline {2.3}Análisis de las cascadas atmosféricas}{8}{section.32}%
-\contentsline {section}{\numberline {2.4}Simulaciones}{9}{section.34}%
-\contentsline {subsection}{\numberline {2.4.1}Estrategia para simulaciones de EAS}{10}{subsection.35}%
-\contentsline {subsection}{\numberline {2.4.2}Problemática de las simulaciones}{10}{subsection.37}%
-\contentsline {section}{\numberline {2.5}Modelos generativos}{11}{section.38}%
-\contentsline {subsection}{\numberline {2.5.1}Aplicación de modelos generativos}{11}{subsection.39}%
-\contentsline {chapter}{\numberline {3}Modelos generativos}{13}{chapter.40}%
-\contentsline {section}{\numberline {3.1}Introducción}{13}{section.41}%
-\contentsline {subsection}{\numberline {3.1.1}Fundamento teórico}{13}{subsection.42}%
-\contentsline {section}{\numberline {3.2}Líneas de investigación}{14}{section.43}%
-\contentsline {section}{\numberline {3.3}Modelos generativos}{14}{section.44}%
-\contentsline {subsection}{\numberline {3.3.1}Conceptos básicos}{15}{subsection.45}%
-\contentsline {subsection}{\numberline {3.3.2}Modelos basados en la verosimilitud}{15}{subsection.46}%
-\contentsline {subsection}{\numberline {3.3.3}Modelos implícitos}{17}{subsection.51}%
-\contentsline {subsubsection}{GANS}{17}{section*.52}%
-\contentsline {subsubsection}{WGAN}{18}{section*.60}%
-\contentsline {subsubsection}{Conditional GAN}{18}{section*.63}%
-\contentsline {subsection}{\numberline {3.3.4}Aprendizaje de representación}{18}{subsection.65}%
-\contentsline {chapter}{\numberline {4}Método experimental}{21}{chapter.66}%
-\contentsline {section}{\numberline {4.1}Recolección y manejo de datos}{21}{section.67}%
-\contentsline {section}{\numberline {4.2}Algoritmos}{21}{section.68}%
-\contentsline {subsection}{\numberline {4.2.1}WGAN}{22}{subsection.69}%
-\contentsline {section}{\numberline {4.3}Desarrollo del método}{22}{section.71}%
-\contentsline {chapter}{\numberline {5}Resultados}{23}{chapter.78}%
-\contentsline {section}{\numberline {5.1}Discusión de resultados obtenidos}{23}{section.79}%
-\contentsline {chapter}{\numberline {6}Conlusiones}{29}{chapter.96}%
-\contentsline {section}{\numberline {6.1}Conclusiones puntuales obtenidas}{29}{section.97}%
-\contentsline {section}{\numberline {6.2}Trabajos futuros}{29}{section.100}%
-\contentsline {chapter}{\numberline {A}Arquitecturas}{31}{appendix.103}%
-\contentsline {section}{\numberline {A.1}Descripción de las capas}{31}{section.104}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{33}{appendix*.107}%
+\contentsline {chapter}{\numberline {1}Introduccion}{1}{chapter.9}%
+\contentsline {section}{\numberline {1.1}Introducción}{1}{section.10}%
+\contentsline {section}{\numberline {1.2}Planteamiento del problema}{2}{section.11}%
+\contentsline {section}{\numberline {1.3}Objetivo de la tesis}{2}{section.12}%
+\contentsline {section}{\numberline {1.4}Delimitación del tema}{2}{section.16}%
+\contentsline {section}{\numberline {1.5}Organización de la tesis}{3}{section.17}%
+\contentsline {chapter}{\numberline {2}Estado del arte}{5}{chapter.18}%
+\contentsline {section}{\numberline {2.1}Antecedentes}{5}{section.19}%
+\contentsline {section}{\numberline {2.2}Cascadas Atmosféricas}{6}{section.20}%
+\contentsline {subsection}{\numberline {2.2.1}Propiedades de las cascadas atmosféricas}{7}{subsection.23}%
+\contentsline {subsection}{\numberline {2.2.2}Métodos de detección}{7}{subsection.24}%
+\contentsline {section}{\numberline {2.3}Análisis de las cascadas atmosféricas}{8}{section.26}%
+\contentsline {section}{\numberline {2.4}Simulaciones}{9}{section.28}%
+\contentsline {subsection}{\numberline {2.4.1}Estrategia para simulaciones de EAS}{10}{subsection.29}%
+\contentsline {subsection}{\numberline {2.4.2}Problemática de las simulaciones}{10}{subsection.31}%
+\contentsline {section}{\numberline {2.5}Modelos generativos}{11}{section.32}%
+\contentsline {subsection}{\numberline {2.5.1}Aplicación de modelos generativos}{11}{subsection.33}%
+\contentsline {chapter}{\numberline {3}Modelos generativos}{13}{chapter.34}%
+\contentsline {section}{\numberline {3.1}Introducción}{13}{section.35}%
+\contentsline {subsection}{\numberline {3.1.1}Fundamento teórico}{13}{subsection.36}%
+\contentsline {section}{\numberline {3.2}Líneas de investigación}{14}{section.37}%
+\contentsline {section}{\numberline {3.3}Modelos generativos}{14}{section.38}%
+\contentsline {subsection}{\numberline {3.3.1}Conceptos básicos}{15}{subsection.39}%
+\contentsline {subsection}{\numberline {3.3.2}Modelos basados en la verosimilitud}{15}{subsection.40}%
+\contentsline {subsection}{\numberline {3.3.3}Modelos implícitos}{17}{subsection.45}%
+\contentsline {subsubsection}{GANS}{17}{section*.46}%
+\contentsline {subsubsection}{WGAN}{18}{section*.54}%
+\contentsline {subsubsection}{Conditional GAN}{18}{section*.57}%
+\contentsline {subsection}{\numberline {3.3.4}Aprendizaje de representación}{18}{subsection.59}%
+\contentsline {chapter}{\numberline {4}Método experimental}{21}{chapter.60}%
+\contentsline {section}{\numberline {4.1}Recolección y manejo de datos}{21}{section.61}%
+\contentsline {section}{\numberline {4.2}Algoritmos}{21}{section.62}%
+\contentsline {subsection}{\numberline {4.2.1}WGAN}{22}{subsection.63}%
+\contentsline {section}{\numberline {4.3}Desarrollo del método}{22}{section.65}%
+\contentsline {chapter}{\numberline {5}Resultados}{23}{chapter.72}%
+\contentsline {section}{\numberline {5.1}Discusión de resultados obtenidos}{23}{section.73}%
+\contentsline {chapter}{\numberline {6}Conlusiones}{29}{chapter.90}%
+\contentsline {section}{\numberline {6.1}Conclusiones puntuales obtenidas}{29}{section.91}%
+\contentsline {section}{\numberline {6.2}Trabajos futuros}{29}{section.94}%
+\contentsline {chapter}{\numberline {A}Arquitecturas}{31}{appendix.97}%
+\contentsline {section}{\numberline {A.1}Descripción de las capas}{31}{section.98}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{33}{appendix*.101}%

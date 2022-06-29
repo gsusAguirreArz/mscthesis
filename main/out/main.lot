@@ -5,10 +5,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Parámetros de la base de datos.\relax }}{23}{table.caption.81}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Parámetros de la base de datos.\relax }}{24}{table.caption.85}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Parámetros del modelo.\relax }}{25}{table.caption.87}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Parámetros de la base de datos.\relax }}{23}{table.caption.75}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Parámetros de la base de datos.\relax }}{24}{table.caption.79}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Parámetros del modelo.\relax }}{25}{table.caption.81}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Capas del generador $G_\theta $\relax }}{32}{table.caption.105}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Capas del Discriminador $D_\phi $\relax }}{32}{table.caption.106}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Capas del generador $G_\theta $\relax }}{32}{table.caption.99}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Capas del Discriminador $D_\phi $\relax }}{32}{table.caption.100}%
