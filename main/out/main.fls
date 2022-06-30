@@ -297,8 +297,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm
 INPUT Figures/Logos/escudo_cic.png
 INPUT ./Figures/Logos/escudo_cic.png
 INPUT ./Figures/Logos/escudo_cic.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplrc8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
