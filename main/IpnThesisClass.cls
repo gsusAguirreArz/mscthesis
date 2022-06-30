@@ -461,23 +461,23 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \DeclareDocumentEnvironment{extraAbstract}{ O{\null\vfill} }{
 	\checktoopen
-	\tttypeout{\abstractname}
+	\tttypeout{Abstract}
 	#1%added to be able to have abstract more than one page long
 	\thispagestyle{empty}
 	\begin{center}
-		{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
+		% {\normalsize \MakeUppercase{\univname} \par}% University name in capitals
+		% \bigskip
+		{\huge\textit{Abstract} \par}
 		\bigskip
-		{\huge\textit{\abstractname} \par}
-		\bigskip
-		{\normalsize \facname \par}% Faculty name
-		{\normalsize \deptname \par}% Department name
-		\bigskip
-		{\normalsize \degreename\par}% Degree name
-		\bigskip
-		{\normalsize\bfseries \@title \par}% Thesis title
-		\medskip
-		{\normalsize \byname{} \authorname \par}% Author name
-		\bigskip
+		% {\normalsize \facname \par}% Faculty name
+		% {\normalsize \deptname \par}% Department name
+		% \bigskip
+		% {\normalsize \degreename\par}% Degree name
+		% \bigskip
+		% {\normalsize\bfseries \@title \par}% Thesis title
+		% \medskip
+		% {\normalsize \byname{} \authorname \par}% Author name
+		% \bigskip
 	\end{center}
 }
 {
