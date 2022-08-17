@@ -7,6 +7,11 @@
 Para compilar el archivo se usa:
 
 - Windows [TexMaker](https://www.xm1math.net/texmaker/)
+- Perl
+- Vscode Latex Workshop 
+  - ```json
+  - 
+  - ```
 
 ### Tablero de trabajo
 
